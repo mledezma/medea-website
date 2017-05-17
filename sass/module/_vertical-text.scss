@@ -1,0 +1,35 @@
+.vertical-text {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: absolute;
+    left: 0;
+    top: 25%;
+    display: block;
+}
+
+.rotate-wrapper {
+    height: 500px;
+    width: 100%;
+
+    h2 {
+        position:relative;
+        float:left;
+        width:90px;
+
+        span {
+            display:inline-block;
+            position:absolute;
+            left:-65px;
+            top: 95px;
+            white-space: nowrap;
+            -webkit-transform:rotate(-90deg);
+        }
+    }
+    aside {
+        border-left: 2px solid #000;
+        float:left;
+        width:50%;
+        padding:0 9%;
+    }
+}
