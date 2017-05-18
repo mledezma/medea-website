@@ -68,18 +68,28 @@ h3 {
 .rotate-wrapper {
   height: 500px;
   width: 100%; }
+  @media screen and (min-device-width: 1200px) {
+    .rotate-wrapper {
+      float: right;
+      width: 60%; } }
   .rotate-wrapper h2 {
     position: relative;
     float: left;
     width: 84px; }
-    .rotate-wrapper h2 span {
-      display: inline-block;
-      position: absolute;
-      left: -20px;
-      top: 65px;
-      white-space: nowrap;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg); }
+    @media screen and (min-device-width: 1200px) {
+      .rotate-wrapper h2 {
+        width: 110px; } }
+  .rotate-wrapper span {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: 80px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); }
+    @media screen and (min-device-width: 1200px) {
+      .rotate-wrapper span {
+        top: 45px; } }
   .rotate-wrapper aside {
     background: -webkit-linear-gradient(#000, #888);
     background-clip: text;
@@ -90,6 +100,9 @@ h3 {
     line-height: 1.5;
     padding: 0 9%;
     width: 55%; }
+    @media screen and (min-device-width: 1200px) {
+      .rotate-wrapper aside {
+        padding: 0 6%; } }
 
 .gallery {
   text-align: center; }
