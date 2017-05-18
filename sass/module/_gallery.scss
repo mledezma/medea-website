@@ -1,5 +1,14 @@
 .gallery {
     text-align: center;  
+    position: relative;  
+
+    p {
+        @media screen and (min-device-width: 1200px){
+            left: 7%;
+            position: absolute;  
+            top: 50%;
+        }    
+    }
 }
 .image-container {
     box-sizing: border-box;
@@ -9,6 +18,10 @@
     position: relative; 
     padding-top: 60%;
     width: 80%;
+
+    @media screen and (min-device-width: 1200px){
+        width: 100%;            
+    }   
 
     img {
         bottom: 0px;        
@@ -21,6 +34,10 @@
         right: 0px;        
         top: 0px;
         width: 90%;
+
+        @media screen and (min-device-width: 1200px){
+          margin: 0;            
+        }   
     }
 }
 
@@ -30,6 +47,9 @@
   height: 4px;
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 90%; /* Specific width is required for Firefox. */
+  @media screen and (min-device-width: 1200px){
+    display: none;            
+  }   
 }
 
 .gallery-range::-webkit-slider-thumb {

@@ -105,7 +105,13 @@ h3 {
         padding: 0 6%; } }
 
 .gallery {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  @media screen and (min-device-width: 1200px) {
+    .gallery p {
+      left: 7%;
+      position: absolute;
+      top: 50%; } }
 
 .image-container {
   box-sizing: border-box;
@@ -115,6 +121,9 @@ h3 {
   position: relative;
   padding-top: 60%;
   width: 80%; }
+  @media screen and (min-device-width: 1200px) {
+    .image-container {
+      width: 100%; } }
   .image-container img {
     bottom: 0px;
     display: block;
@@ -126,6 +135,9 @@ h3 {
     right: 0px;
     top: 0px;
     width: 90%; }
+    @media screen and (min-device-width: 1200px) {
+      .image-container img {
+        margin: 0; } }
 
 .gallery-range {
   background-color: #A8A9AD;
@@ -134,6 +146,9 @@ h3 {
   /* Hides the slider so that custom slider can be made */
   width: 90%;
   /* Specific width is required for Firefox. */ }
+  @media screen and (min-device-width: 1200px) {
+    .gallery-range {
+      display: none; } }
 
 .gallery-range::-webkit-slider-thumb {
   -webkit-appearance: none; }
