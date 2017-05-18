@@ -1,0 +1,80 @@
+.gallery {
+    text-align: center;  
+}
+.image-container {
+    box-sizing: border-box;
+    height: 0px;
+    margin: 0 10%;
+    overflow: hidden; 
+    position: relative; 
+    padding-top: 60%;
+    width: 80%;
+
+    img {
+        bottom: 0px;        
+        display: block; //Para que tome todo el espacio desponible
+        left: 0px;        
+        margin: auto;        
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        right: 0px;        
+        top: 0px;
+        width: 90%;
+    }
+}
+
+// Hides the range
+.gallery-range {
+  background-color: #A8A9AD;
+  height: 4px;
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 90%; /* Specific width is required for Firefox. */
+}
+
+.gallery-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.gallery-range:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.gallery-range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+
+/* Special styling for WebKit/Blink */
+.gallery-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10%;
+  border-radius: 3px;
+  background: #636466;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+.gallery-range::-moz-range-thumb {
+  height: 8px;
+  width: 10%;
+  border-radius: 3px;
+  background: #636466;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.gallery-range::-ms-thumb {
+  height: 8px;
+  width: 10%;
+  border-radius: 3px;
+  background: #636466;
+  cursor: pointer;
+}
