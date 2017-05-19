@@ -75,14 +75,14 @@ h3 {
   .rotate-wrapper h2 {
     position: relative;
     float: left;
-    width: 84px; }
+    width: 80px; }
     @media screen and (min-device-width: 1200px) {
       .rotate-wrapper h2 {
         width: 110px; } }
   .rotate-wrapper span {
     display: inline-block;
     position: absolute;
-    left: -40px;
+    left: -50px;
     top: 80px;
     white-space: nowrap;
     transform: rotate(-90deg);
@@ -98,7 +98,7 @@ h3 {
     border-left: 2px solid #000;
     float: left;
     line-height: 1.5;
-    padding: 0 9%;
+    padding: 0 8%;
     width: 55%; }
     @media screen and (min-device-width: 1200px) {
       .rotate-wrapper aside {
@@ -221,7 +221,8 @@ h3 {
   /* custom */ }
 
 .btn-invert:hover {
-  background-color: #659DB5; }
+  background-color: #659DB5;
+  color: #000; }
 
 .btn-l {
   padding: 1% 2.2%; }
