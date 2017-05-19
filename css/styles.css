@@ -15,8 +15,11 @@ h4 {
 
 p, a {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem; }
+  font-size: 20px;
+  font-size: 2rem; }
+
+p {
+  margin-bottom: 30px; }
 
 aside {
   width: 40%; }
@@ -41,13 +44,13 @@ h3 {
   zoom: 1; }
 
 .vertical-text {
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 25%;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  position: absolute;
-  left: 0;
-  top: 25%;
-  display: block; }
+  transform: rotate(270deg); }
 
 .rotate-wrapper {
   height: 580px;
@@ -57,20 +60,20 @@ h3 {
       margin-left: 40%;
       width: 60%; } }
   .rotate-wrapper h2 {
-    position: relative;
     float: left;
+    position: relative;
     width: 80px; }
     @media screen and (min-device-width: 1200px) {
       .rotate-wrapper h2 {
         width: 110px; } }
   .rotate-wrapper span {
     display: inline-block;
-    position: absolute;
     left: -50px;
+    position: absolute;
     top: 80px;
-    white-space: nowrap;
     transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); }
+    -webkit-transform: rotate(-90deg);
+    white-space: nowrap; }
     @media screen and (min-device-width: 1200px) {
       .rotate-wrapper span {
         top: 45px; } }
@@ -85,8 +88,8 @@ h3 {
         padding: 0 6%; } }
 
 .gallery {
-  text-align: center;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .gallery p {
     font-size: 24px;
     font-size: 2.4rem; }
@@ -141,37 +144,37 @@ h3 {
   /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
 
 .gallery-range::-ms-track {
-  width: 100%;
-  cursor: pointer;
   /* Hides the slider so custom styles can be added */
   background: transparent;
   border-color: transparent;
-  color: transparent; }
+  color: transparent;
+  cursor: pointer;
+  width: 100%; }
 
 /* Special styling for WebKit/Blink */
 .gallery-range::-webkit-slider-thumb {
+  background: #636466;
+  border-radius: 3px;
+  cursor: pointer;
   -webkit-appearance: none;
   height: 15px;
-  width: 10%;
-  border-radius: 3px;
-  background: #636466;
-  cursor: pointer; }
+  width: 10%; }
 
 /* All the same stuff for Firefox */
 .gallery-range::-moz-range-thumb {
-  height: 15px;
-  width: 10%;
-  border-radius: 3px;
   background: #636466;
-  cursor: pointer; }
+  border-radius: 3px;
+  cursor: pointer;
+  height: 15px;
+  width: 10%; }
 
 /* All the same stuff for IE */
 .gallery-range::-ms-thumb {
-  height: 15px;
-  width: 10%;
-  border-radius: 3px;
   background: #636466;
-  cursor: pointer; }
+  border-radius: 3px;
+  cursor: pointer;
+  height: 15px;
+  width: 10%; }
 
 .btn {
   background-color: #659DB5;

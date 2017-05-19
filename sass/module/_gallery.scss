@@ -1,6 +1,6 @@
 .gallery {
-    text-align: center;  
     position: relative;  
+    text-align: center;  
 
     p {
         font-size: 24px;
@@ -13,6 +13,7 @@
         }    
     }
 }
+
 .image-container {
     box-sizing: border-box;
     height: 0px;
@@ -64,40 +65,40 @@
 }
 
 .gallery-range::-ms-track {
-  width: 100%;
-  cursor: pointer;
-
   /* Hides the slider so custom styles can be added */
   background: transparent; 
   border-color: transparent;
   color: transparent;
+
+  cursor: pointer;
+  width: 100%;  
 }
 
 
 /* Special styling for WebKit/Blink */
 .gallery-range::-webkit-slider-thumb {
+  background: #636466;  
+  border-radius: 3px;
+  cursor: pointer;
   -webkit-appearance: none;
   height: 15px;
   width: 10%;
-  border-radius: 3px;
-  background: #636466;
-  cursor: pointer;
 }
 
 /* All the same stuff for Firefox */
 .gallery-range::-moz-range-thumb {
+  background: #636466;
+  border-radius: 3px;  
+  cursor: pointer;
   height: 15px;
   width: 10%;
-  border-radius: 3px;
-  background: #636466;
-  cursor: pointer;
 }
 
 /* All the same stuff for IE */
 .gallery-range::-ms-thumb {
+  background: #636466;  
+  border-radius: 3px;
+  cursor: pointer;
   height: 15px;
   width: 10%;
-  border-radius: 3px;
-  background: #636466;
-  cursor: pointer;
 }
