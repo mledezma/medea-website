@@ -46,3 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .vscode/settings.json
+
+# For SASS
+.sass-cache
