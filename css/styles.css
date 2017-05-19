@@ -13,10 +13,10 @@ h4 {
   font-weight: 400;
   margin: 30px 0; }
 
-p {
+p, a {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 16px;
+  font-size: 1.6rem; }
 
 aside {
   width: 40%; }
@@ -40,22 +40,6 @@ h3 {
   overflow: auto;
   zoom: 1; }
 
-.fontSize-xl {
-  font-size: 60px;
-  font-size: 6.0rem; }
-
-.fontSize-l {
-  font-size: 33px;
-  font-size: 3.3rem; }
-
-.fontSize-m {
-  font-size: 24px;
-  font-size: 2.4rem; }
-
-.fontSize-s {
-  font-size: 16px;
-  font-size: 1.6rem; }
-
 .vertical-text {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -66,11 +50,11 @@ h3 {
   display: block; }
 
 .rotate-wrapper {
-  height: 500px;
+  height: 580px;
   width: 100%; }
   @media screen and (min-device-width: 1200px) {
     .rotate-wrapper {
-      float: right;
+      margin-left: 40%;
       width: 60%; } }
   .rotate-wrapper h2 {
     position: relative;
@@ -91,10 +75,6 @@ h3 {
       .rotate-wrapper span {
         top: 45px; } }
   .rotate-wrapper aside {
-    background: -webkit-linear-gradient(#000, #888);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     border-left: 2px solid #000;
     float: left;
     line-height: 1.5;
@@ -107,11 +87,14 @@ h3 {
 .gallery {
   text-align: center;
   position: relative; }
-  @media screen and (min-device-width: 1200px) {
-    .gallery p {
-      left: 7%;
-      position: absolute;
-      top: 50%; } }
+  .gallery p {
+    font-size: 24px;
+    font-size: 2.4rem; }
+    @media screen and (min-device-width: 1200px) {
+      .gallery p {
+        left: 7%;
+        position: absolute;
+        top: 50%; } }
 
 .image-container {
   box-sizing: border-box;
@@ -168,7 +151,7 @@ h3 {
 /* Special styling for WebKit/Blink */
 .gallery-range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 10px;
+  height: 15px;
   width: 10%;
   border-radius: 3px;
   background: #636466;
@@ -176,7 +159,7 @@ h3 {
 
 /* All the same stuff for Firefox */
 .gallery-range::-moz-range-thumb {
-  height: 8px;
+  height: 15px;
   width: 10%;
   border-radius: 3px;
   background: #636466;
@@ -184,7 +167,7 @@ h3 {
 
 /* All the same stuff for IE */
 .gallery-range::-ms-thumb {
-  height: 8px;
+  height: 15px;
   width: 10%;
   border-radius: 3px;
   background: #636466;
