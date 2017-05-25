@@ -1,0 +1,85 @@
+.sideNav {
+    background-color: #000;
+    color: white;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    vertical-align: middle;
+    width: 0;
+    z-index: 1;
+}
+
+.sideNav a {
+    color: #fff;
+    display: inline-block;
+    //margin: 20px 0;
+    padding: 50px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sideNav a:hover{
+    color: $ligthblue-accent;
+}
+
+.openBtnCont {
+    box-sizing: border-box;
+    margin-bottom: 35px;
+    position: relative;
+    padding: 30px; 
+}
+
+.openBtn {
+    color: #fff;
+    //font-size: 60px;
+    font-size: 3.750em;
+    position: absolute;
+    right: 0;
+    padding: 0 40px;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    //font-size: 60px;
+    font-size: 3.750em;
+    margin-left: 50px;
+}
+
+.closeBtn {
+    padding: 0 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {padding-top: 15px;}
+  .sideNav a {font-size: 18px;}
+}
+
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 500px;
+}
+
+.mainmenu {
+    //font-size: 60px;
+    font-size: 3.750em;
+    list-style: none;
+    text-align: center;
+}
+
+.submenu {
+    //font-size: 36px;
+    font-size: 0.600em;
+    color: gray;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}

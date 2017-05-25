@@ -1,5 +1,5 @@
 .btn {
-    background-color: $secondary-color;
+    background-color: $ligthblue-accent;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -13,13 +13,13 @@
 
 .btn:hover {
     background-color: #000 ;
-    color: $secondary-color;
+    color: $ligthblue-accent;
 }
 
 .btn-invert {
     background-color: #000;
     border: 1px solid #000;
-    color: $secondary-color;
+    color: $ligthblue-accent;
     cursor: pointer;
     font-size: 18px;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .btn-invert:hover {
-    background-color: $secondary-color;
+    background-color: $ligthblue-accent;
     color: #000;
 }    
 

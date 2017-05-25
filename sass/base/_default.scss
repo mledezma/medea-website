@@ -2,6 +2,7 @@ h1,
 h2, 
 h3, 
 h4 {
+    color: #fff;
     font-family: $main-font;
     font-weight: 400;
     margin: 30px 0;    
@@ -14,6 +15,7 @@ p, a {
 }
 
 p {
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -38,4 +40,8 @@ h2 {
 h3 {
     font-size: 24px;
     font-size: 2.4rem; 
+}
+
+body {
+    background-color: #000;
 }

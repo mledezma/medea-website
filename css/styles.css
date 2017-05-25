@@ -9,6 +9,7 @@ h1,
 h2,
 h3,
 h4 {
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 30px 0; }
@@ -19,6 +20,7 @@ p, a {
   font-size: 2rem; }
 
 p {
+  color: #fff;
   margin-bottom: 30px; }
 
 aside {
@@ -39,9 +41,16 @@ h3 {
   font-size: 24px;
   font-size: 2.4rem; }
 
+body {
+  background-color: #000; }
+
 .clearfix {
   overflow: auto;
   zoom: 1; }
+
+.full-wrapper {
+  width: 90%;
+  margin: 0 auto; }
 
 .vertical-text {
   display: block;
@@ -78,7 +87,7 @@ h3 {
       .rotate-wrapper span {
         top: 45px; } }
   .rotate-wrapper aside {
-    border-left: 2px solid #000;
+    border-left: 3px solid #659DB5;
     float: left;
     line-height: 1.5;
     padding: 0 8%;
@@ -218,5 +227,157 @@ h3 {
 
 .btn-s {
   padding: 0.5% 0.8%; }
+
+.sideNav {
+  background-color: #000;
+  color: white;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  vertical-align: middle;
+  width: 0;
+  z-index: 1; }
+
+.sideNav a {
+  color: #fff;
+  display: inline-block;
+  padding: 50px 0;
+  text-decoration: none;
+  transition: 0.3s; }
+
+.sideNav a:hover {
+  color: #659DB5; }
+
+.openBtnCont {
+  box-sizing: border-box;
+  margin-bottom: 35px;
+  position: relative;
+  padding: 30px; }
+
+.openBtn {
+  color: #fff;
+  font-size: 3.750em;
+  position: absolute;
+  right: 0;
+  padding: 0 40px; }
+
+.sideNav .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  font-size: 3.750em;
+  margin-left: 50px; }
+
+.closeBtn {
+  padding: 0 40px; }
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px; }
+
+  .sideNav a {
+    font-size: 18px; } }
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 500px; }
+
+.mainmenu {
+  font-size: 3.750em;
+  list-style: none;
+  text-align: center; }
+
+.submenu {
+  font-size: 0.600em;
+  color: gray;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out; }
+
+.awardsTitle {
+  color: white;
+  font-size: 22px;
+  font-size: 2.2rem;
+  margin-top: 22px;
+  text-transform: uppercase; }
+
+.awardsItemReview {
+  border: 2px solid white;
+  position: relative; }
+
+.awardsItem {
+  background-color: #000;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  margin-top: 22px;
+  padding: 16%;
+  text-decoration: none;
+  vertical-align: top;
+  width: 100%; }
+  @media screen and (min-width: 480px) {
+    .awardsItem {
+      padding: 10%;
+      width: 49%;
+      height: 450px; } }
+  .awardsItem h2 {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    text-transform: uppercase; }
+  .awardsItem a {
+    background-color: #659DB5;
+    color: white;
+    display: inline-block;
+    padding: 14px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none; }
+  .awardsItem p {
+    color: #659DB5;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    @media screen and (min-device-width: 480px) {
+      .awardsItem p {
+        font-size: 24px;
+        font-size: 2.4rem; } }
+  .awardsItem:last-child {
+    margin-bottom: 40px; }
+  .awardsItem:hover {
+    background-color: #659DB5; }
+    .awardsItem:hover p {
+      color: white; }
+
+.festivalItems {
+  text-align: center; }
+  .festivalItems h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-align: center; }
+    @media screen and (min-device-width: 480px) {
+      .festivalItems h2 {
+        font-size: 36px;
+        font-size: 3.6rem; } }
+    .festivalItems h2:before {
+      content: url("../img/laurel_1.png"); }
+    .festivalItems h2:after {
+      content: url("../img/laurel_2.png"); }
+
+.newsItems h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: left; }
+
+.arrow {
+  position: relative; }
+
+.awards-buttonArrow {
+  left: 100%;
+  position: absolute; }
 
 /*# sourceMappingURL=styles.css.map */

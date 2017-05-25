@@ -10,12 +10,42 @@
 </head>
 
 <body>
-    <ul>
-        <li><a href="about.html">Acerca de</a></li>
-        <li><a href="gallery.html">Galeria</a></li>
-        <li><a href="contact.html">Contactos</a></li>
-        <li><a href="making.html">Making of</a></li>
-    </ul>
+    <div class="full-wrapper">
+      <!-- Start Header -->
+    <header>
+        <!--Star Nav Wrapper-->
+      <div id="sideNav" class="sideNav">
+        <nav class="navigation">
+          <ul class="mainmenu">
+            <li><a href="about.html">Acerca de &#8711;</a>
+              <ul class="submenu">
+                <li><a href="#">Proyecto</a></li>
+                <li><a href="making.html">Making of</a></li>
+                <li><a href="#">Intención del director</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sinopsis</a></li>
+            <li><a href="#">Participantes &#8711;</a>
+              <ul class="submenu">
+                <li><a href="#">Cast</a></li>
+                <li><a href="#">Crew</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="festivals.html">Festivales</a></li>
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="contact.html">Contácto</a></li>
+          </ul>
+        </nav>
+        <a id="closeNav"class="closeBtn">&times;</a>
+      <!--End Nav Wrapper-->
+      </div>
+      <div class="openBtnCont">
+        <span id="openNav" class="openBtn">&#9776;</span>
+      </div>
+    </header>  
+    <!-- End Header -->
+
     <div class="gallery">
         <a href="#" id="btn-previous"><</a>
         <div class="image-container">
@@ -24,11 +54,15 @@
         <a href="#" id="btn-after">></a>        
         <input type="range" class="gallery-range" id="galleryRange" value="0">
         <p><span id="currentImage">0</span> de <span id="totalImage">0</span></p>
-    </div>
+    </div>  
+    </div> 
+    
        
     <!-- Scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/main_menu.js"></script>
+
 </body>
 
 </html>
