@@ -1,5 +1,5 @@
 .btn {
-    background-color: $ligthblue-accent;
+    background-color: $lightblue-accent;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -13,13 +13,13 @@
 
 .btn:hover {
     background-color: #000 ;
-    color: $ligthblue-accent;
+    color: $lightblue-accent;
 }
 
 .btn-invert {
     background-color: #000;
     border: 1px solid #000;
-    color: $ligthblue-accent;
+    color: $lightblue-accent;
     cursor: pointer;
     font-size: 18px;
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .btn-invert:hover {
-    background-color: $ligthblue-accent;
+    background-color: $lightblue-accent;
     color: #000;
 }    
 
@@ -44,4 +44,15 @@
 
 .btn-s {
     padding: 0.5% 0.8%;
+}
+
+.btn-svg {
+    cursor: pointer;
+}
+
+.btn-svg:hover {
+
+    * {
+        stroke: $lightblue-accent;
+    }
 }
