@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Noticias</title>
+  <title>News</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -12,21 +12,44 @@
 <body>
   <!--Start News Wrapper-->
   <div class="full-wrapper">
+
+      <header>
+      <!--Star Nav Wrapper-->
+      <div id="sideNav" class="sideNav">
+        <nav class="navigation">
+          <ul class="mainmenu">
+            <li><a href="about.html">About &#8711;</a>
+              <ul class="submenu">
+                <li><a href="#">Project</a></li>
+                <li><a href="making.html">Making of</a></li>
+                <li><a href="#">Director's Cover Letter</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Synopsis</a></li>
+            <li><a href="#">Participants &#8711;</a>
+              <ul class="submenu">
+                <li><a href="#">Cast</a></li>
+                <li><a href="#">Crew</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="festivals.html">Festivals</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a id="closeNav" class="closeBtn">&times;</a>
+        <!--End Nav Wrapper-->
+      </div>
+      <div class="openBtnCont">
+        <span id="openNav" class="openBtn">&#9776;</span>
+      </div>
+    </header>
+    <!-- End Header -->
+
     <div class="awardsContainer">
-      <h2 class="awardsTitle">Noticias</h2>
+      <h2 class="awardsTitle">News</h2>
       <div class="awardsItems newsItems">
-        <a class="awardsItem awardsItemReview" href="https://www.pagina12.com.ar/34239-diferente-tematica-igual-intensidad">
-          <div class="newsItemContent">
-            <h3>“Diferente temática, igual intensidad, el ritmo cotidiano de una chica que parece querer salirse de su cuerpo”</h3>
-            <p>Página 12</p>
-            <div class="arrow">
-              <svg viewBox="0 0 10 18" stroke-width="1" width="20" height="28" class="awards-buttonArrow" xmlns="http://www.w3.org/2000/svg"
-                style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                <polyline stroke-linecap="round" fill="none" stroke="white" points="1,1 8,8 1,16" style="stroke: rgb(255, 255, 255);"></polyline>
-              </svg>
-            </div>
-          </div>
-        </a>
         <a class="awardsItem awardsItemReview" href="https://www.pagina12.com.ar/34239-diferente-tematica-igual-intensidad">
           <div class="newsItemContent">
             <h3>“Diferente temática, igual intensidad, el ritmo cotidiano de una chica que parece querer salirse de su cuerpo”</h3>
@@ -69,6 +92,11 @@
     </div>
     <!--Start News Wrapper-->
   </div>
+
+  <!-- Scripts -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script type="text/javascript" src="../js/main_menu.js"></script>
 </body>
 
 </html>
