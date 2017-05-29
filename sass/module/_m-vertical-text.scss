@@ -9,7 +9,6 @@
 }
 
 .rotate-wrapper {
-    height: 580px;
     width: 100%;
 
     @media screen and (min-device-width: 1200px) {
@@ -18,26 +17,22 @@
     }
 
     h2 {
-        float: left;        
-        position: relative;
-        width: 80px;
-
         @media screen and (min-device-width: 1200px) {
+            float: left;        
+            position: relative;
             width: 110px;            
         }    
     }
 
     span {
-        display: inline-block;
-        left: -50px;        
-        position: absolute;
-        top: 80px;
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        white-space: nowrap;
-
         @media screen and (min-device-width: 1200px) {
-            top: 45px; 
+            display: inline-block;
+            left: -50px;        
+            position: absolute;
+            top: 45px;             
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            white-space: nowrap;
         }
     }
 
@@ -46,10 +41,11 @@
         float: left;
         line-height: 1.5;
         padding: 0 8%;
-        width: 55%;        
+        width: 90%;        
         
         @media screen and (min-device-width: 1200px) { 
-            padding: 0 6%;   
+            padding: 0 6%;  
+            width: 55%;                     
         }
     }
 }

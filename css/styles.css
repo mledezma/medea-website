@@ -52,6 +52,23 @@ body {
   width: 90%;
   margin: 0 auto; }
 
+.cast-wrapper {
+  width: 100%; }
+  @media screen and (min-device-width: 1200px) {
+    .cast-wrapper {
+      margin-left: 40%;
+      width: 60%; } }
+  .cast-wrapper aside {
+    border-left: 3px solid #659DB5;
+    float: left;
+    line-height: 1.5;
+    padding: 0 8%;
+    width: 90%; }
+    @media screen and (min-device-width: 1200px) {
+      .cast-wrapper aside {
+        padding: 0 6%;
+        width: 55%; } }
+
 .vertical-text {
   display: block;
   left: 0;
@@ -62,39 +79,35 @@ body {
   transform: rotate(270deg); }
 
 .rotate-wrapper {
-  height: 580px;
   width: 100%; }
   @media screen and (min-device-width: 1200px) {
     .rotate-wrapper {
       margin-left: 40%;
       width: 60%; } }
-  .rotate-wrapper h2 {
-    float: left;
-    position: relative;
-    width: 80px; }
-    @media screen and (min-device-width: 1200px) {
-      .rotate-wrapper h2 {
-        width: 110px; } }
-  .rotate-wrapper span {
-    display: inline-block;
-    left: -50px;
-    position: absolute;
-    top: 80px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    white-space: nowrap; }
-    @media screen and (min-device-width: 1200px) {
-      .rotate-wrapper span {
-        top: 45px; } }
+  @media screen and (min-device-width: 1200px) {
+    .rotate-wrapper h2 {
+      float: left;
+      position: relative;
+      width: 110px; } }
+  @media screen and (min-device-width: 1200px) {
+    .rotate-wrapper span {
+      display: inline-block;
+      left: -50px;
+      position: absolute;
+      top: 45px;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      white-space: nowrap; } }
   .rotate-wrapper aside {
     border-left: 3px solid #659DB5;
     float: left;
     line-height: 1.5;
     padding: 0 8%;
-    width: 55%; }
+    width: 90%; }
     @media screen and (min-device-width: 1200px) {
       .rotate-wrapper aside {
-        padding: 0 6%; } }
+        padding: 0 6%;
+        width: 55%; } }
 
 .gallery {
   position: relative;

@@ -2,3 +2,29 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.cast-wrapper {
+    width: 100%;
+
+    @media screen and (min-device-width: 1200px) {
+        margin-left: 40%;      
+        width: 60%;
+    }
+
+    aside {
+        border-left: 3px solid $lightblue-accent;
+        float: left;
+        line-height: 1.5;
+        padding: 0 8%;
+        width: 90%;        
+        
+        @media screen and (min-device-width: 1200px) { 
+            padding: 0 6%;  
+            width: 55%;                     
+        }
+    }
+}
+
+.cast-members {
+    //width: 60%;    
+}
