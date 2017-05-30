@@ -84,6 +84,33 @@ body {
   .cast-members h3:hover {
     color: #659DB5; }
 
+.crew-wrapper {
+  width: 100%; }
+  @media screen and (min-device-width: 1200px) {
+    .crew-wrapper {
+      margin-left: 21%;
+      width: 60%; } }
+  .crew-wrapper aside {
+    border-left: 3px solid #659DB5;
+    float: right;
+    line-height: 1.5;
+    padding: 0 8%;
+    width: 90%; }
+    @media screen and (min-device-width: 1200px) {
+      .crew-wrapper aside {
+        padding: 0 6%;
+        width: 45%; } }
+
+.crew-members {
+  display: inline-block; }
+  .crew-members h3 {
+    cursor: pointer;
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0 0 20px; }
+  .crew-members h3:hover {
+    color: #659DB5; }
+
 .vertical-text {
   display: block;
   left: 0;
