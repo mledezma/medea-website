@@ -7,24 +7,35 @@
     width: 100%;
 
     @media screen and (min-device-width: 1200px) {
-        margin-left: 40%;      
-        width: 60%;
+        margin-left: 33%;      
+        width: 50%;
     }
 
     aside {
         border-left: 3px solid $lightblue-accent;
-        float: left;
+        float: right;
         line-height: 1.5;
         padding: 0 8%;
         width: 90%;        
         
         @media screen and (min-device-width: 1200px) { 
             padding: 0 6%;  
-            width: 55%;                     
+            width: 60%;                     
         }
     }
 }
 
 .cast-members {
-    //width: 60%;    
+    display: inline-block;
+
+    h3 {
+        cursor: pointer;
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin: 0 0 20px;
+    } 
+
+    h3:hover {
+        color: $lightblue-accent;
+    } 
 }

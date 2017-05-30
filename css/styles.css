@@ -48,6 +48,11 @@ body {
   overflow: auto;
   zoom: 1; }
 
+.text-selected {
+  color: #659DB5;
+  font-size: 24px !important;
+  font-size: 2.4rem !important; }
+
 .full-wrapper {
   width: 90%;
   margin: 0 auto; }
@@ -56,18 +61,28 @@ body {
   width: 100%; }
   @media screen and (min-device-width: 1200px) {
     .cast-wrapper {
-      margin-left: 40%;
-      width: 60%; } }
+      margin-left: 33%;
+      width: 50%; } }
   .cast-wrapper aside {
     border-left: 3px solid #659DB5;
-    float: left;
+    float: right;
     line-height: 1.5;
     padding: 0 8%;
     width: 90%; }
     @media screen and (min-device-width: 1200px) {
       .cast-wrapper aside {
         padding: 0 6%;
-        width: 55%; } }
+        width: 60%; } }
+
+.cast-members {
+  display: inline-block; }
+  .cast-members h3 {
+    cursor: pointer;
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0 0 20px; }
+  .cast-members h3:hover {
+    color: #659DB5; }
 
 .vertical-text {
   display: block;
