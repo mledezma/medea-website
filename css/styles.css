@@ -50,8 +50,8 @@ body {
 
 .text-selected {
   color: #659DB5;
-  font-size: 24px !important;
-  font-size: 2.4rem !important; }
+  font-size: 22px !important;
+  font-size: 2.2rem !important; }
 
 .full-wrapper {
   width: 90%;
@@ -88,8 +88,8 @@ body {
   width: 100%; }
   @media screen and (min-device-width: 1200px) {
     .crew-wrapper {
-      margin-left: 21%;
-      width: 60%; } }
+      margin-left: 14%;
+      width: 75%; } }
   .crew-wrapper aside {
     border-left: 3px solid #659DB5;
     float: right;
