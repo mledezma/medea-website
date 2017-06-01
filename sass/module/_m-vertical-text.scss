@@ -11,13 +11,13 @@
 .rotate-wrapper {
     width: 100%;
 
-    @media screen and (min-device-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 40%;      
         width: 60%;
     }
 
     h2 {
-        @media screen and (min-device-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             float: left;        
             position: relative;
             width: 110px;            
@@ -25,7 +25,7 @@
     }
 
     span {
-        @media screen and (min-device-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             display: inline-block;
             left: -50px;        
             position: absolute;
@@ -43,7 +43,7 @@
         padding: 0 8%;
         width: 90%;        
         
-        @media screen and (min-device-width: 1200px) { 
+        @media screen and (min-width: 1200px) { 
             padding: 0 6%;  
             width: 55%;                     
         }

@@ -30,7 +30,7 @@
         top: 0px;
         width: 100%;
 
-        @media screen and (min-device-width: 1200px){
+        @media screen and (min-width: 1200px){
           margin: 0;            
         }   
     }
@@ -42,7 +42,7 @@
   height: 4px;
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 90%; /* Specific width is required for Firefox. */
-  @media screen and (min-device-width: 1200px){
+  @media screen and (min-width: 1200px){
     display: none;            
   }   
 }

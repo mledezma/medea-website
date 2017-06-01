@@ -7,29 +7,23 @@ var crewSingle = (function ($) {
         var crewMember = $('#crew');
         var crewBio = $('#crewBio');
 
-        var jqxhr = $.getJSON( "../js/json/crew_EN.json", function(data) {
+        var jqxhr = $.getJSON( "../js/json/cast_crew.json", function(data) {
             jsonSuccess(data);
         })
         .fail(function() {
             jsonError();
         })
 
-        // Extend sting prototype methods
-        String.prototype.replaceAll = function(search, replacement) {
-            var target = this;
-            return target.replace(new RegExp(search, 'g'), replacement);
-        };
-
         // Triggered if the JSON succeed
         function jsonSuccess(data) {
-            var crewObj = data.crew;
+            var crewObj = data.crew.en;
             crewObj.forEach(function(element, index) {
                 var h3 = $('<h3></h3>');
                 var br = document.createElement('br');
                 h3.html(element.name);
                 h3.click(function(){
                     var h3Array = $(crewMember)[0].getElementsByTagName('h3');
-                    crewBio.html(element.bio.replaceAll('/n', '</br>' ));        
+                    crewBio.html(element);        
                     for(var i = 0; i < h3Array.length; i++) {
                         h3Array[i].classList.remove('text-selected');
                         h3Array[index].classList.add('text-selected');

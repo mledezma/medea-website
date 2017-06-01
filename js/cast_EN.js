@@ -6,30 +6,23 @@ var castSingle = (function ($) {
     function init() {
         var castMember = $('#cast');
         var castBio = $('#castBio');
-
-        var jqxhr = $.getJSON( "../js/json/cast_EN.json", function(data) {
+        var jqxhr = $.getJSON( "../js/json/cast_crew.json", function(data) {
             jsonSuccess(data);
         })
         .fail(function() {
             jsonError();
         })
 
-        // Extend sting prototype methods
-        String.prototype.replaceAll = function(search, replacement) {
-            var target = this;
-            return target.replace(new RegExp(search, 'g'), replacement);
-        };
-
         // Triggered if the JSON succeed
         function jsonSuccess(data) {
-            var castObj = data.cast;
+            var castObj = data.cast.en;
             castObj.forEach(function(element, index) {
                 var h3 = $('<h3></h3>');
                 var br = document.createElement('br');
                 h3.html(element.name);
                 h3.click(function(){
                     var h3Array = $(castMember)[0].getElementsByTagName('h3');
-                    castBio.html(element.bio.replaceAll('/n', '</br>' ));        
+                    castBio.html(element.bio);        
                     for(var i = 0; i < h3Array.length; i++) {
                         h3Array[i].classList.remove('text-selected');
                         h3Array[index].classList.add('text-selected');
@@ -54,7 +47,6 @@ var castSingle = (function ($) {
             if( !instance ) {
                 instance = init();
             }
-
             return instance;
         }
     };

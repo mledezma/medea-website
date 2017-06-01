@@ -6,7 +6,7 @@
 .cast-wrapper {
     width: 100%;
 
-    @media screen and (min-device-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 25%;      
         width: 70%;
     }
@@ -18,7 +18,7 @@
         padding: 0 8%;
         width: 90%;        
         
-        @media screen and (min-device-width: 1200px) { 
+        @media screen and (min-width: 1200px) { 
             padding: 0 6%;  
             width: 60%;                     
         }
@@ -43,7 +43,7 @@
 .crew-wrapper {
     width: 100%;
 
-    @media screen and (min-device-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 14%;      
         width: 75%;
     }
@@ -55,7 +55,7 @@
         padding: 0 8%;
         width: 90%;        
         
-        @media screen and (min-device-width: 1200px) { 
+        @media screen and (min-width: 1200px) { 
             padding: 0 6%;  
             width: 45%;                     
         }
