@@ -145,7 +145,8 @@ footer {
     display: inline; }
   footer p {
     display: inline;
-    margin-right: 2%; }
+    margin-right: 2%;
+    text-align: center; }
   footer img {
     width: 10%;
     border: 1px solid #fff; }
