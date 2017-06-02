@@ -57,6 +57,11 @@ body {
   width: 90%;
   margin: 0 auto; }
 
+.home-wrapper {
+  background-image: url("../img/medea2.jpg");
+  background-size: cover;
+  height: 1200px; }
+
 .cast-wrapper {
   width: 100%; }
   @media screen and (min-width: 1200px) {
@@ -110,6 +115,44 @@ body {
     margin: 0 0 20px; }
   .crew-members h3:hover {
     color: #659DB5; }
+
+header {
+  padding: 35px 0; }
+  @media screen and (min-width: 768px) {
+    header {
+      margin-bottom: 60px; } }
+  @media screen and (min-width: 950px) {
+    header {
+      margin-bottom: 80px; } }
+  header img {
+    width: 35%;
+    float: left; }
+    @media screen and (min-width: 768px) {
+      header img {
+        width: 20%; } }
+    @media screen and (min-width: 950px) {
+      header img {
+        width: 15%; } }
+
+footer {
+  width: 95%;
+  padding: 20px 0;
+  text-align: right; }
+  @media screen and (min-width: 950px) {
+    footer {
+      padding: 35px 0; } }
+  footer div {
+    display: inline; }
+  footer p {
+    display: inline;
+    margin-right: 2%; }
+  footer img {
+    width: 10%;
+    border: 1px solid #fff; }
+    @media screen and (min-width: 950px) {
+      footer img {
+        width: 3%;
+        border: 1px solid #fff; } }
 
 .vertical-text {
   display: block;
@@ -318,16 +361,18 @@ body {
 
 .openBtnCont {
   box-sizing: border-box;
-  margin-bottom: 35px;
   position: relative;
   padding: 30px; }
 
 .openBtn {
   color: #fff;
-  font-size: 3.750em;
+  font-size: 2.75em;
   position: absolute;
   right: 0;
-  padding: 0 40px; }
+  top: 0; }
+  @media screen and (min-width: 1200px) {
+    .openBtn {
+      font-size: 3.754em; } }
 
 .sideNav .closeBtn {
   position: absolute;
@@ -379,16 +424,22 @@ body {
   box-sizing: border-box;
   color: #FFF;
   display: inline-block;
-  margin-top: 22px;
+  height: 320px;
+  margin-top: 5px;
   padding: 16%;
   text-decoration: none;
   vertical-align: top;
   width: 100%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .awardsItem {
       padding: 10%;
       width: 49%;
-      height: 450px; } }
+      height: 370px; } }
+  @media screen and (min-width: 950px) {
+    .awardsItem {
+      padding: 6%;
+      width: 33%;
+      height: 370px; } }
   .awardsItem h2 {
     font-family: "Josefin Sans", sans-serif;
     position: relative;
@@ -399,16 +450,16 @@ body {
     display: inline-block;
     padding: 14px 25px;
     position: relative;
-    text-align: center;
     text-decoration: none; }
   .awardsItem p {
     color: #659DB5;
     font-size: 14px;
-    font-size: 1.4rem; }
-    @media screen and (min-width: 480px) {
+    font-size: 1.4rem;
+    text-align: center; }
+    @media screen and (min-width: 950px) {
       .awardsItem p {
-        font-size: 24px;
-        font-size: 2.4rem; } }
+        font-size: 17px;
+        font-size: 1.4rem; } }
   .awardsItem:last-child {
     margin-bottom: 40px; }
   .awardsItem:hover {
@@ -416,20 +467,18 @@ body {
     .awardsItem:hover p {
       color: white; }
 
-.festivalItems {
+.festivalItems h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center; }
-  .festivalItems h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-    text-align: center; }
-    @media screen and (min-width: 480px) {
-      .festivalItems h2 {
-        font-size: 36px;
-        font-size: 3.6rem; } }
-    .festivalItems h2:before {
-      content: url("../img/laurel_1.png"); }
-    .festivalItems h2:after {
-      content: url("../img/laurel_2.png"); }
+  @media screen and (min-width: 1950px) {
+    .festivalItems h2 {
+      font-size: 36px;
+      font-size: 1.7rem; } }
+  .festivalItems h2:before {
+    content: url("../img/laurel_1.png"); }
+  .festivalItems h2:after {
+    content: url("../img/laurel_2.png"); }
 
 .newsItems h3 {
   font-size: 18px;

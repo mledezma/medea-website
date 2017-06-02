@@ -28,7 +28,6 @@
 
 .openBtnCont {
     box-sizing: border-box;
-    margin-bottom: 35px;
     position: relative;
     padding: 30px; 
 }
@@ -36,10 +35,15 @@
 .openBtn {
     color: #fff;
     //font-size: 60px;
-    font-size: 3.750em;
+    font-size: 2.75em;
     position: absolute;
     right: 0;
-    padding: 0 40px;
+    top: 0;
+    //padding: 0 40px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 3.754em;
+    }
 }
 
 .sideNav .closeBtn {
