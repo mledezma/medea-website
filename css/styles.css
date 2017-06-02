@@ -289,7 +289,7 @@ footer {
 
 .btn {
   background-color: #659DB5;
-  border: none;
+  border: 1px solid #659DB5;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
@@ -493,5 +493,12 @@ footer {
 .awards-buttonArrow {
   left: 100%;
   position: absolute; }
+
+.logos {
+  margin-top: 20px; }
+  .logos img {
+    width: 20%; }
+  .logos img:last-child {
+    width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
