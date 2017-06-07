@@ -1,4 +1,10 @@
-div, p, h1, h2, h3, h4 {
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+body {
   margin: 0;
   padding: 0; }
 
@@ -16,8 +22,8 @@ h4 {
 
 p, a {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-size: 2rem; }
+  font-size: 16px;
+  font-size: 1.6rem; }
 
 p {
   color: #fff;
@@ -72,7 +78,7 @@ body {
     border-left: 3px solid #659DB5;
     float: right;
     line-height: 1.5;
-    padding: 0 8%;
+    padding: 5% 0% 0 8%;
     width: 90%; }
     @media screen and (min-width: 1200px) {
       .cast-wrapper aside {
@@ -99,7 +105,7 @@ body {
     border-left: 3px solid #659DB5;
     float: right;
     line-height: 1.5;
-    padding: 0 8%;
+    padding: 5% 0% 0 8%;
     width: 90%; }
     @media screen and (min-width: 1200px) {
       .crew-wrapper aside {
@@ -160,8 +166,6 @@ footer {
   left: 0;
   position: absolute;
   top: 25%;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .rotate-wrapper {
@@ -182,13 +186,12 @@ footer {
       position: absolute;
       top: 45px;
       transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
       white-space: nowrap; } }
   .rotate-wrapper aside {
     border-left: 3px solid #659DB5;
     float: left;
     line-height: 1.5;
-    padding: 0 8%;
+    padding: 0 5%;
     width: 90%; }
     @media screen and (min-width: 1200px) {
       .rotate-wrapper aside {
@@ -294,9 +297,6 @@ footer {
   cursor: pointer;
   font-size: 18px;
   text-align: center;
-  -webkit-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855), color 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
-  -moz-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855), color 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
-  -o-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855), color 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
   transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855), color 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
   /* custom */ }
 
@@ -311,9 +311,6 @@ footer {
   cursor: pointer;
   font-size: 18px;
   text-align: center;
-  -webkit-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
-  -moz-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
-  -o-transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
   transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
   /* custom */ }
 
@@ -367,19 +364,18 @@ footer {
 
 .openBtn {
   color: #fff;
-  font-size: 2.75em;
+  font-size: 45px;
+  font-size: 4.5rem;
   position: absolute;
   right: 0;
   top: 0; }
-  @media screen and (min-width: 1200px) {
-    .openBtn {
-      font-size: 3.754em; } }
 
 .sideNav .closeBtn {
   position: absolute;
   top: 0;
   right: 60px;
-  font-size: 3.750em;
+  font-size: 60px;
+  font-size: 6.0rem;
   margin-left: 50px; }
 
 .closeBtn {
@@ -396,18 +392,20 @@ footer {
   max-height: 500px; }
 
 .mainmenu {
-  font-size: 3.750em;
+  font-size: 60px;
+  font-size: 6.0rem;
   list-style: none;
   text-align: center; }
 
 .submenu {
-  font-size: 0.600em;
+  font-size: 36px;
+  font-size: 3.6rem;
   color: gray;
   list-style: none;
   text-decoration: none;
   overflow: hidden;
   max-height: 0;
-  -webkit-transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out; }
 
 .awardsTitle {
   color: white;
@@ -428,7 +426,6 @@ footer {
   height: 320px;
   margin-top: 5px;
   padding: 16%;
-  text-decoration: none;
   vertical-align: top;
   width: 100%; }
   @media screen and (min-width: 768px) {
@@ -460,7 +457,7 @@ footer {
     @media screen and (min-width: 950px) {
       .awardsItem p {
         font-size: 17px;
-        font-size: 1.4rem; } }
+        font-size: 1.7rem; } }
   .awardsItem:last-child {
     margin-bottom: 40px; }
   .awardsItem:hover {
@@ -475,7 +472,7 @@ footer {
   @media screen and (min-width: 1950px) {
     .festivalItems h2 {
       font-size: 36px;
-      font-size: 1.7rem; } }
+      font-size: 3.6rem; } }
   .festivalItems h2:before {
     content: url("../img/laurel_1.png"); }
   .festivalItems h2:after {

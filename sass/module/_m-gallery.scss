@@ -38,60 +38,61 @@
 
 // Hides the range
 .gallery-range {
-  background-color: #A8A9AD;
-  height: 4px;
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 90%; /* Specific width is required for Firefox. */
-  @media screen and (min-width: 1200px){
-    display: none;            
-  }   
+    background-color: #A8A9AD;
+    height: 4px;
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 90%; /* Specific width is required for Firefox. */
+
+    @media screen and (min-width: 1200px){
+        display: none;            
+    }   
 }
 
 .gallery-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 .gallery-range:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
 
 .gallery-range::-ms-track {
-  /* Hides the slider so custom styles can be added */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
 
-  cursor: pointer;
-  width: 100%;  
+    cursor: pointer;
+    width: 100%;  
 }
 
 
 /* Special styling for WebKit/Blink */
 .gallery-range::-webkit-slider-thumb {
-  background: #636466;  
-  border-radius: 3px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  height: 15px;
-  width: 10%;
+    background: #636466;  
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 10%;
 }
 
 /* All the same stuff for Firefox */
 .gallery-range::-moz-range-thumb {
-  background: #636466;
-  border-radius: 3px;  
-  cursor: pointer;
-  height: 15px;
-  width: 10%;
+    background: #636466;
+    border-radius: 3px;  
+    cursor: pointer;
+    height: 15px;
+    width: 10%;
 }
 
 /* All the same stuff for IE */
 .gallery-range::-ms-thumb {
-  background: #636466;  
-  border-radius: 3px;
-  cursor: pointer;
-  height: 15px;
-  width: 10%;
+    background: #636466;  
+    border-radius: 3px;
+    cursor: pointer;
+    height: 15px;
+    width: 10%;
 }
 
 .btn-previous {
