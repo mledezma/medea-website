@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +9,22 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:light" rel="stylesheet">
 </head>
-
 <body>
   <div class="full-wrapper">
+    
     <!-- Start Header -->
     <header>
+      <img src="../img/logo_medea.png">
       <!--Star Nav Wrapper-->
-      <div id="sideNav" class="sideNav">
+      <div id="sideNav" class="side-nav">
         <nav class="navigation">
           <ul class="mainmenu">
             <li><a href="homepage.html">Inicio</a></li>
             <li><a href="#">Acerca de &#8711;</a>
               <ul class="submenu">
                 <li><a href="project.html">Proyecto</a></li>
-                <li><a href="letter.html">Intención del director</a></li>
                 <li><a href="making.html">Making of</a></li>
+                <li><a href="letter.html">Intención del director</a></li>
               </ul>
             </li>
             <li><a href="synopsis.html">Sinopsis</a></li>
@@ -34,21 +34,22 @@
                 <li><a href="crew.html">Crew</a></li>
               </ul>
             </li>
-            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="gallery.html">Gallería</a></li>
             <li><a href="festivals.html">Festivales</a></li>
             <li><a href="news.html">Noticias</a></li>
             <li><a href="contact.html">Contácto</a></li>
           </ul>
         </nav>
-        <a id="closeNav" class="closeBtn">&times;</a>
+        <a id="closeNav" class="close-btn">&times;</a>
         <!--End Nav Wrapper-->
       </div>
-      <div class="openBtnCont">
-        <span id="openNav" class="openBtn">&#9776;</span>
+      <div class="open-btn-wrapper">
+        <span id="openNav" class="open-btn">&#9776;</span>
       </div>
-    </header>
     <!-- End Header -->
-
+    </header>
+    
+    <!-- Start Section -->
     <section>
       <div class="cast-wrapper">
         <div id="cast" class="cast-members"></div>
@@ -58,12 +59,12 @@
         </aside>
       </div>
     </section>
+    <!-- End Section -->
   </div>
 
   <!-- Scripts -->
   <script src="../js/jquery.min.js"></script>
-  <script src="../js/cast_ES.js"></script>
+  <script src="../js/cast_EN.js"></script>
   <script type="text/javascript" src="../js/main_menu.js"></script>
 </body>
-
 </html>
