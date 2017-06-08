@@ -325,7 +325,7 @@ footer {
   color: #000; }
 
 .btn-download {
-  padding: 0.7% 1.5%; }
+  padding: 1.7% 2.5%; }
 
 .btn-svg {
   cursor: pointer; }
@@ -496,8 +496,9 @@ footer {
   position: absolute; }
 
 .logos {
-  margin-top: 20px; }
+  margin-top: 10%; }
   .logos img {
+    margin-right: 12%;
     width: 20%; }
   .logos img:last-child {
     width: 50%; }

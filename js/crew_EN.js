@@ -23,7 +23,7 @@ var crewSingle = (function ($) {
                 h3.html(element.name);
                 h3.click(function(){
                     var h3Array = $(crewMember)[0].getElementsByTagName('h3');
-                    crewBio.html(element);        
+                    crewBio.html(element.bio);        
                     for(var i = 0; i < h3Array.length; i++) {
                         h3Array[i].classList.remove('text-selected');
                         h3Array[index].classList.add('text-selected');
