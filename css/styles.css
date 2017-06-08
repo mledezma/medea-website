@@ -66,7 +66,8 @@ body {
 .home-wrapper {
   background-image: url("../img/medea2.jpg");
   background-size: cover;
-  height: 1200px; }
+  height: 1200px;
+  position: relative; }
 
 .cast-wrapper {
   width: 100%; }
@@ -160,6 +161,10 @@ footer {
       footer img {
         width: 3%;
         border: 1px solid #fff; } }
+
+.trailer {
+  margin: 100% 0;
+  text-align: center; }
 
 .vertical-text {
   display: block;
@@ -309,7 +314,8 @@ footer {
   border: 1px solid #000;
   color: #659DB5;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
+  font-size: 2.0rem;
   text-align: center;
   transition: background 1s cubic-bezier(0.76, 0.28, 0.3, 0.855);
   /* custom */ }
@@ -318,20 +324,17 @@ footer {
   background-color: #659DB5;
   color: #000; }
 
-.btn-l {
-  padding: 1% 2.2%; }
-
-.btn-m {
+.btn-download {
   padding: 0.7% 1.5%; }
-
-.btn-s {
-  padding: 0.5% 0.8%; }
 
 .btn-svg {
   cursor: pointer; }
 
 .btn-svg:hover * {
   stroke: #659DB5; }
+
+.btn-trailer {
+  padding: 2.5% 25%; }
 
 .sideNav {
   background-color: #000;

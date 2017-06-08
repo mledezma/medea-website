@@ -18,7 +18,8 @@
     border: 1px solid #000;
     color: $lightblue-accent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
+    font-size: 2.0rem;
     text-align: center;
     transition: background 1s cubic-bezier(0.760, 0.280, 0.300, 0.855); /* custom */
 }
@@ -28,16 +29,8 @@
     color: #000;
 }    
 
-.btn-l {
-    padding: 1% 2.2%;
-}
-
-.btn-m {
+.btn-download {
     padding: 0.7% 1.5%;
-}
-
-.btn-s {
-    padding: 0.5% 0.8%;
 }
 
 .btn-svg {
@@ -49,4 +42,8 @@
     * {
         stroke: $lightblue-accent;
     }
+}
+
+.btn-trailer {
+    padding: 2.5% 25%;
 }
