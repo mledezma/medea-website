@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medea</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat:300,400" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:light" rel="stylesheet">
 </head>
 
 <body>
+  <div class="opacity hidden"></div>
   <div class="home-wrapper">
     <div class="full-wrapper">
 
@@ -48,27 +48,30 @@
         <div class="open-btn-wrapper">
           <span id="openNav" class="open-btn">&#9776;</span>
         </div>
-      <!-- End Header -->
+        <!-- End Header -->
       </header>
     </div>
   </div>
-  
-=======
-          <a id="closeNav" class="closeBtn">&times;</a>
-          <!--End Nav Wrapper-->
-        </div>
-        <div class="openBtnCont">
-          <span id="openNav" class="openBtn">&#9776;</span>
-        </div>
-      </header>
-      <!-- End Header -->
-    </div>
-    <div class="trailer">
-      <a class="btn btn-trailer">Ver Trailer</a>
-    </div>
+  <a id="closeNav" class="closeBtn">&times;</a>
+  <!--End Nav Wrapper-->
   </div>
+  <div class="openBtnCont">
+    <span id="openNav" class="openBtn">&#9776;</span>
+  </div>
+  </header>
+  <!-- End Header -->
+  </div>
+  <div class="btn-trailer-wrapper">
+    <a class="btn btn-trailer" id="btnTrailer">Ver Trailer</a>
+  </div>
+  </div>
+  <!-- Trailer of the movie -->
+  <section class="modal trailer hidden" id="trailer">
+    <img src="../img/btn-trailer.png" class="btn-close" alt="Button to go before of the trailer">
+    <div class="trailer-video" id="trailerYoutube">
+    </div>
+  </section>
   <!-- End Home Wrapper-->
->>>>>>> c0ca79fa0d3a033562a036b4c246329e927267d2
   <footer>
     <div>
       <div>
@@ -87,6 +90,8 @@
   <!-- Scripts -->
   <script src="../js/jquery.min.js"></script>
   <script type="text/javascript" src="../js/main_menu.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
