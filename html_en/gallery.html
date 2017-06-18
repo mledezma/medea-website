@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat:300,400" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:light" rel="stylesheet">
 </head>
@@ -46,10 +45,15 @@
       <div class="open-btn-wrapper">
         <span id="openNav" class="open-btn">&#9776;</span>
       </div>
-    <!-- End Header -->
     </header>
-    
-    <div class="gallery">
+    <!-- End Header -->
+
+    <!-- Start Gallery Thumbnails-->
+    <div class="gallery-thumbnails" id="galleryThumbnails">
+    </div>
+
+    <!-- Start Gallery Modal -->
+    <div class="gallery hidden" id="galleryContainer">
       <div class="btn-previous" id="btnPrevious">
         <svg class="btn-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="78px" height="78.75px" viewBox="0 0 78 78.75" enable-background="new 0 0 78 78.75" xml:space="preserve">
@@ -61,8 +65,9 @@
         </svg>
       </div>
       <div class="image-container">
-        <img src="../img/1.jpg" alt="" id="galleryImage">
+        <img id="galleryImage">
       </div>
+      <img src="../img/btn-close.png" class="btn-close" alt="Button to go before of the trailer" id="btnClose">
       <div class="btn-foward" id="btnFoward">
         <svg class="btn-svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="78px" height="78.75px" viewBox="0 0 78 78.75" enable-background="new 0 0 78 78.75" xml:space="preserve">
@@ -76,6 +81,8 @@
       <p><span id="currentImage">0</span> de <span id="totalImage">0</span></p>
     </div>
   </div>
+
+  <!-- Start footer -->
   <footer>
     <div>
       <div>
