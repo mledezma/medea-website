@@ -1,11 +1,12 @@
-var sideNav = document.getElementById('sideNav');
+// Jquery of the menu
+var sideNav = $('#sideNav');
+var openNav = $('#openNav');
+var closeNav = $('#closeNav');
 
-var openNav = document.getElementById('openNav');
-openNav.addEventListener("click",function () {
-    sideNav.style.width = "100%";
-})
+openNav.on('click', function () {
+    sideNav.css('width', '100%');
+});
 
-var closeNav = document.getElementById('closeNav');
-closeNav.addEventListener("click",function () {
-    sideNav.style.width = "0";
-})
+closeNav.on('click',function () {
+    sideNav.css('width', '0');
+});

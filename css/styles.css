@@ -456,6 +456,7 @@ footer {
 
 .open-btn {
   color: #fff;
+  cursor: pointer;
   font-size: 45px;
   font-size: 4.5rem;
   position: absolute;
@@ -471,6 +472,7 @@ footer {
   margin-left: 50px; }
 
 .close-btn {
+  cursor: pointer;
   padding: 0 40px; }
 
 @media screen and (max-height: 450px) {
