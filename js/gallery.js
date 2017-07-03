@@ -4,12 +4,12 @@ var Gallery = function(data){
     this.alt = data.alt;
     this.index = 0;    
     this.total = data.url.length;   
-    this.image = document.getElementById('galleryImage');    
-    this.thumbnailsContainer = document.getElementById('galleryThumbnails');  
-    this.galleryContainer = document.getElementById('galleryContainer');  
-    this.currentImage = document.getElementById('currentImage');  
-    this.totalImage = document.getElementById('totalImage');  
-    this.btnClose = document.getElementById('btnClose');
+    this.image = $('#galleryImage');    
+    this.thumbnailsContainer = $('#galleryThumbnails');  
+    this.galleryContainer = $('#galleryContainer');  
+    this.currentImage = $('#currentImage');  
+    this.totalImage = $('#totalImage');  
+    this.btnClose = $('#btnClose');
 }
 
 
@@ -20,9 +20,6 @@ Gallery.prototype = {
         // Render the thumbnails
         this.composeThumbnails();
 
-        // Inits the gallery
-        //this.renderGallery();
-       
         // Inits the backward button
         this.backward();
 
@@ -34,18 +31,18 @@ Gallery.prototype = {
     },
     renderGallery: function() {
         var _self = this;                  
-        this.image.src = this.url[this.index];
-        this.image.alt = this.alt[this.index]; 
+        this.image.attr('src', this.url[this.index]);
+        this.image.attr('alt', this.alt[this.index]);
 
-        this.btnClose.addEventListener('click', function() {
-            _self.thumbnailsContainer.classList.remove('hidden');
-            _self.galleryContainer.classList.add('hidden');
+        this.btnClose.on('click', function() {
+            _self.thumbnailsContainer.removeClass('hidden');
+            _self.galleryContainer.addClass('hidden');
         });
     },
     backward: function() {
-        var btnPrevious = document.getElementById('btnPrevious');
+        var btnPrevious = $('#btnPrevious');
         var _self = this;             
-        btnPrevious.addEventListener('click', function() {
+        btnPrevious.on('click', function() {
             if(_self.index <= 0) {
                 _self.index = _self.total-1;
                 _self.alt[_self.total-1];                
@@ -54,16 +51,16 @@ Gallery.prototype = {
                 _self.index--; 
                 _self.alt[_self.index];                                           
             };
-            _self.image.src = _self.url[_self.index];
-            _self.image.alt = _self.alt[_self.index];
-            _self.currentImage.innerHTML = _self.index+1;
-            _self.totalImage.innerHTML = _self.total;
+            _self.image.attr('src',  _self.url[_self.index]);
+            _self.image.attr('alt', _self.alt[_self.index]);
+            _self.currentImage.html(_self.index+1)
+            _self.totalImage.html(_self.total);
         })     
     },
     forward: function() {
-        var btnFoward = document.getElementById('btnFoward');        
+        var btnFoward = $('#btnFoward');        
         var _self = this;          
-        btnFoward.addEventListener('click', function() {
+        btnFoward.on('click', function() {
             if(_self.index >= _self.total-1) {
                 _self.index = 0;
                 _self.alt[0];
@@ -72,37 +69,41 @@ Gallery.prototype = {
                 _self.index++; 
                 _self.alt[_self.index];                          
             };
-            console.log(_self.image)
-            _self.image.src = _self.url[_self.index];
-            _self.image.alt = _self.alt[_self.index];
-            _self.currentImage.innerHTML = _self.index+1;
-            _self.totalImage.innerHTML = _self.total;
+            _self.image.attr('src', _self.url[_self.index]);
+            _self.image.attr('alt',  _self.alt[_self.index]);
+            _self.currentImage.html(_self.index+1);
+            _self.totalImage.html(_self.total);
         })  
     },
     renderCounter: function() {
-        this.currentImage.innerHTML = this.index+1;
-        this.totalImage.innerHTML = this.total;
+        this.currentImage.html(this.index+1);
+        this.totalImage.html(this.total);
     },
     composeThumbnails: function() {
         var _self = this;      
         for(var i = 0; i < this.total; i++) {
-            var container = document.createElement('div');
-            container.classList.add('image-container');
+            var container = $('<div></div>');
+            container.addClass('image-container');
 
-            var image = document.createElement('img');
-            image.src = this.url[i];
-            image.data = i;
-            counter = i;
-            image.addEventListener('click', function() {
-                _self.thumbnailsContainer.classList.add('hidden');
-                _self.galleryContainer.classList.remove('hidden');
-                _self.index = this.data;
+            // var image = document.createElement('img');
+            // image.src = this.url[i];
+            // image.data = i;
+            var image = $('<img></img>');
+            image.attr('src', this.url[i]);
+            image.data('img', i);            
+            console.log(image.data('img'));
+            
+            image.on('click', function(e) {
+                console.log();
+                _self.thumbnailsContainer.addClass('hidden');
+                _self.galleryContainer.removeClass('hidden');
+                _self.index = $(this).data('img');
             
                 _self.renderGallery();               
             });
 
-            container.appendChild(image);
-            this.thumbnailsContainer.appendChild(container);
+            container.append(image);
+            this.thumbnailsContainer.append(container);
         }
     }
 }
