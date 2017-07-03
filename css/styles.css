@@ -78,7 +78,6 @@ body {
 .home-wrapper {
   background-image: url("../img/medea2.jpg");
   background-size: cover;
-  height: 1200px;
   position: relative; }
 
 .cast-wrapper {
@@ -193,8 +192,9 @@ footer {
         border: 1px solid #fff; } }
 
 .btn-trailer-wrapper {
-  margin: 100% 0;
-  text-align: center; }
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 10%; }
 
 .modal {
   box-sizing: border-box;
@@ -415,7 +415,8 @@ footer {
   stroke: #659DB5; }
 
 .btn-trailer {
-  padding: 2.5% 25%; }
+  padding: 2.5% 25%;
+  position: relative; }
 
 .btn-close {
   cursor: pointer;
@@ -427,63 +428,24 @@ footer {
 
 .side-nav {
   background-color: #000;
-  color: white;
   height: 100%;
   left: 0;
   overflow-x: hidden;
   padding-top: 60px;
   position: fixed;
+  text-transform: uppercase;
   top: 0;
-  transition: 0.5s;
   vertical-align: middle;
   width: 0;
   z-index: 1; }
-
-.side-nav a {
-  color: #fff;
-  display: inline-block;
-  padding: 50px 0;
-  text-decoration: none;
-  transition: 0.3s; }
-
-.side-nav a:hover {
-  color: #659DB5; }
-
-.open-btn-wrapper {
-  box-sizing: border-box;
-  position: relative;
-  padding: 30px; }
-
-.open-btn {
-  color: #fff;
-  cursor: pointer;
-  font-size: 45px;
-  font-size: 4.5rem;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.side-nav .close-btn {
-  position: absolute;
-  top: 0;
-  right: 60px;
-  font-size: 60px;
-  font-size: 6.0rem;
-  margin-left: 50px; }
-
-.close-btn {
-  cursor: pointer;
-  padding: 0 40px; }
-
-@media screen and (max-height: 450px) {
-  .side-nav {
-    padding-top: 15px; }
-
   .side-nav a {
-    font-size: 18px; } }
-.mainmenu li:hover .submenu {
-  display: block;
-  max-height: 500px; }
+    color: #fff;
+    display: inline-block;
+    padding: 50px 0;
+    text-decoration: none;
+    transition: 0.3s; }
+    .side-nav a:hover {
+      color: #659DB5; }
 
 .mainmenu {
   font-size: 60px;
@@ -494,13 +456,38 @@ footer {
 .submenu {
   font-size: 36px;
   font-size: 3.6rem;
-  color: gray;
-  list-style: none;
-  text-decoration: none;
   overflow: hidden;
-  max-height: 0;
-  transition: all 0.5s ease-out;
-  display: block; }
+  max-height: 0; }
+
+.open-btn-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  padding: 30px; }
+
+.open-btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  font-size: 25px;
+  font-size: 2.5rem;
+  margin-left: 50px; }
+
+.close-btn {
+  cursor: pointer;
+  padding: 0 40px; }
+
+li:hover .submenu {
+  display: block;
+  max-height: 500px; }
 
 .awardsTitle {
   color: white;
@@ -593,6 +580,15 @@ footer {
     width: 20%; }
   .logos img:last-child {
     width: 50%; }
+
+.medea-principal {
+  display: block;
+  margin: auto;
+  margin-top: 30%;
+  width: 50%; }
+  @media screen and (min-width: 768px) {
+    .medea-principal {
+      margin-top: 15%; } }
 
 .trailer {
   background-color: #000; }

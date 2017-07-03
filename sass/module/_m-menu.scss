@@ -1,71 +1,27 @@
 .side-nav {
     background-color: #000;
-    color: white;
     height: 100%;
     left: 0;
     overflow-x: hidden;
     padding-top: 60px;
     position: fixed;
+    text-transform: uppercase;
     top: 0;
-    transition: 0.5s;
     vertical-align: middle;
     width: 0;
     z-index: 1;
 
-}
+    a {
+        color: #fff;
+        display: inline-block;
+        padding: 50px 0;
+        text-decoration: none;
+        transition: 0.3s; 
 
-
-.side-nav a {
-    color: #fff;
-    display: inline-block;
-    padding: 50px 0;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.side-nav a:hover{
-    color: $lightblue-accent;
-}
-
-.open-btn-wrapper {
-    box-sizing: border-box;
-    position: relative;
-    padding: 30px;
-}
-
-.open-btn {
-    color: #fff;
-    cursor: pointer;
-    font-size: 45px;
-    font-size: 4.5rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.side-nav .close-btn {
-    position: absolute;
-    top: 0;
-    right: 60px;
-    font-size: 60px;
-    font-size: 6.0rem;
-    margin-left: 50px;
-}
-
-.close-btn {
-    cursor: pointer;    
-    padding: 0 40px;
-}
-
-@media screen and (max-height: 450px) {
-  .side-nav {padding-top: 15px;}
-  .side-nav a {font-size: 18px;}
-}
-
-
-.mainmenu li:hover .submenu {
-    display: block;
-    max-height: 500px;
+        &:hover {
+            color: $lightblue-accent;
+        }
+    }
 }
 
 .mainmenu {
@@ -78,11 +34,85 @@
 .submenu {
     font-size: 36px;
     font-size: 3.6rem;
-    color: gray;
-    list-style: none;
-    text-decoration: none;
     overflow: hidden;
     max-height: 0;
-    transition: all 0.5s ease-out;
-    display: block;
 }
+
+.open-btn-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding: 30px;
+}
+
+.open-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    font-size: 25px;
+    font-size: 2.5rem;
+    margin-left: 50px;
+}
+
+.close-btn {
+    cursor: pointer;    
+    padding: 0 40px;
+}
+
+li:hover .submenu {
+    display: block;
+    max-height: 500px;
+}
+
+//.side-nav {
+//
+//    margin-bottom: 30px;
+//    float: right;
+//
+//    ul {
+//        overflow: hidden;
+//    }
+//
+//    li a {
+//        color: white;
+//        display: block;
+//        font-family: arial;
+//        font-size: 14px;
+//        padding: 18px;
+//        text-decoration: none;
+//        text-transform: uppercase;   
+//    }
+//
+//    li a:hover {
+//        color: $lightblue-accent;
+//    }
+//
+//    li {
+//        display: inline-block;
+//    }
+//
+//} 
+//
+//.submenu {
+//    display: none;
+//    position: absolute;
+//    z-index: 1;
+//
+//    li {
+//        display: block;
+//    } 
+//    
+//}
+//
+//.dropdown:hover .submenu {
+//    display: block;
+//}
