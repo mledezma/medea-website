@@ -90,8 +90,7 @@ Gallery.prototype = {
             // image.data = i;
             var image = $('<img></img>');
             image.attr('src', this.url[i]);
-            image.data('img', i);            
-            console.log(image.data('img'));
+            image.data('img', i);
             
             image.on('click', function(e) {
                 console.log();
@@ -110,8 +109,8 @@ Gallery.prototype = {
 
 // Gallery Init
 var g1 = new Gallery({
-    'url': ['../img/1.jpg','../img/2.jpg','../img/3.jpg','../img/4.jpg'],
-    'alt': ['Una mujer y un hombre en una fiesta','Mujer frente al espejo','Una mujer y un hombre en una fiesta','Mujer frente al espejo']
+    'url': ['../img/gallery/atropello.jpg','../img/gallery/colchon.jpg','../img/gallery/ducha_1.jpg','../img/gallery/ducha_2.jpg', '../img/gallery/ducha_3.jpg', '../img/gallery/enfrentamiento_1.jpg', '../img/gallery/enfrentamiento_2.jpg','../img/gallery/espejo.jpg','../img/gallery/fiesta_1.jpg','../img/gallery/fiesta_2.jpg','../img/gallery/fiesta_3.jpg','../img/gallery/fiesta_4.jpg','../img/gallery/fiesta_5.jpg','../img/gallery/novio.jpg','../img/gallery/parque.jpg','../img/gallery/parto.jpg','../img/gallery/rugby_1.jpg','../img/gallery/rugby_2.jpg','../img/gallery/rugby_3.jpg','../img/gallery/sangre.jpg'],
+    'alt': ['Atropello','Colchon.jpg','Foto en ducha','Foto en ducha', 'Foto en ducha', 'Enfrentamiento Interno', 'Enfrentamiento Interno','Mujer frente a espejo','Foto en la fiesta','Foto en la fiesta','Foto en la fiesta','../img/gallery/fiesta_4.jpg','Foto en la fiesta','Novio de la protagonista','Mujer en el parque','Mujer teniendo aborto','Mujer jugando Rugby','Mujer jugando Rugby','Mujer jugando Rugby','Sangre en el suelo']
 });
 
 g1.init();
