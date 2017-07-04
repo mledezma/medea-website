@@ -438,31 +438,66 @@ footer {
   vertical-align: middle;
   width: 0;
   z-index: 1; }
-  .side-nav a {
+  @media screen and (min-width: 480px) {
+    .side-nav {
+      background-color: transparent;
+      float: right;
+      height: auto;
+      margin-bottom: 30px;
+      overflow-x: hidden;
+      padding-top: 0;
+      position: static;
+      vertical-align: initial;
+      width: 80%;
+      z-index: 1; }
+      .side-nav li a {
+        color: white;
+        display: block;
+        font-family: arial;
+        font-size: 20px;
+        padding: 18px;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .side-nav li a:hover {
+        color: #659DB5; }
+      .side-nav li {
+        display: inline-block; } }
+
+.mainmenu {
+  list-style: none;
+  text-align: center; }
+  .mainmenu a {
     color: #fff;
     display: inline-block;
     padding: 50px 0;
-    text-decoration: none;
-    transition: 0.3s; }
-    .side-nav a:hover {
+    text-decoration: none; }
+    .mainmenu a:hover {
       color: #659DB5; }
-
-.mainmenu {
-  font-size: 60px;
-  font-size: 6.0rem;
-  list-style: none;
-  text-align: center; }
+  @media screen and (min-width: 480px) {
+    .mainmenu {
+      text-align: left; } }
 
 .submenu {
   font-size: 36px;
   font-size: 3.6rem;
   overflow: hidden;
   max-height: 0; }
+  @media screen and (min-width: 480px) {
+    .submenu {
+      overflow: static;
+      display: none;
+      position: absolute;
+      z-index: 1; }
+      .submenu li {
+        display: block; } }
 
 .open-btn-wrapper {
   box-sizing: border-box;
   position: relative;
   padding: 30px; }
+  @media screen and (min-width: 480px) {
+    .open-btn-wrapper {
+      display: none; } }
 
 .open-btn {
   color: #fff;
@@ -472,18 +507,22 @@ footer {
   position: absolute;
   right: 0;
   top: 0; }
-
-.close-btn {
-  position: absolute;
-  top: 0;
-  right: 60px;
-  font-size: 25px;
-  font-size: 2.5rem;
-  margin-left: 50px; }
+  @media screen and (min-width: 480px) {
+    .open-btn {
+      display: none; } }
 
 .close-btn {
   cursor: pointer;
-  padding: 0 40px; }
+  font-size: 25px;
+  font-size: 2.5rem;
+  margin-left: 50px;
+  padding: 0 40px;
+  position: absolute;
+  right: 60px;
+  top: 0; }
+  @media screen and (min-width: 480px) {
+    .close-btn {
+      display: none; } }
 
 li:hover .submenu {
   display: block;

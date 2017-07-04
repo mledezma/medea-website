@@ -21,12 +21,12 @@ var crewSingle = (function ($) {
                 var h3 = $('<h3></h3>');
                 var br = document.createElement('br');
                 h3.html(element.name);
-                h3.click(function(){
-                    var h3Array = $(crewMember)[0].getElementsByTagName('h3');
-                    crewBio.html(element.bio);        
-                    for(var i = 0; i < h3Array.length; i++) {
-                        h3Array[i].classList.remove('text-selected');
-                        h3Array[index].classList.add('text-selected');
+                h3.on('click', function() {
+                    var childArray = crewMember.children();  
+                    crewBio.html(element.bio); 
+                    for(var i = 0; i < childArray.length; i++) {
+                        childArray[i].classList.remove('text-selected');                                                
+                        childArray[index].classList.add('text-selected');
                     }
                     // for every h3 resets the class and only add the font size to the current h3
                 })

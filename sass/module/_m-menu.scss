@@ -11,24 +11,57 @@
     width: 0;
     z-index: 1;
 
+    @media screen and (min-width: 480px){
+        background-color: transparent;
+        float: right;
+        height: auto;
+        margin-bottom: 30px;
+        overflow-x: hidden;
+        padding-top: 0;
+        position: static;
+        vertical-align: initial;
+        width: 80%;
+        z-index: 1;
+
+        li a {
+            color: white;
+            display: block;
+            font-family: arial;
+            font-size: 20px;
+            padding: 18px;
+            text-decoration: none;
+            text-transform: uppercase;   
+        }
+
+        li a:hover {
+            color: $lightblue-accent;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
+
+}
+
+.mainmenu {
+    list-style: none;
+    text-align: center;
+
     a {
         color: #fff;
         display: inline-block;
         padding: 50px 0;
         text-decoration: none;
-        transition: 0.3s; 
 
         &:hover {
             color: $lightblue-accent;
         }
     }
-}
 
-.mainmenu {
-    font-size: 60px;
-    font-size: 6.0rem;
-    list-style: none;
-    text-align: center;
+    @media screen and (min-width: 480px){
+        text-align: left;
+    }
 }
 
 .submenu {
@@ -36,12 +69,27 @@
     font-size: 3.6rem;
     overflow: hidden;
     max-height: 0;
+
+    @media screen and (min-width: 480px){
+        overflow: static; 
+        display: none;
+        position: absolute;
+        z-index: 1;
+    
+        li {
+            display: block;
+        } 
+    }
 }
 
 .open-btn-wrapper {
     box-sizing: border-box;
     position: relative;
     padding: 30px;
+
+    @media screen and (min-width: 480px){
+        display: none;
+    }
 }
 
 .open-btn {
@@ -52,67 +100,29 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @media screen and (min-width: 480px){
+        display: none;
+    }
 }
 
 .close-btn {
-    position: absolute;
-    top: 0;
-    right: 60px;
+    cursor: pointer;
     font-size: 25px;
     font-size: 2.5rem;
     margin-left: 50px;
+    padding: 0 40px;
+    position: absolute;
+    right: 60px;
+    top: 0;
+
+     @media screen and (min-width: 480px){
+        display: none;
+    }
 }
 
-.close-btn {
-    cursor: pointer;    
-    padding: 0 40px;
-}
 
 li:hover .submenu {
     display: block;
     max-height: 500px;
 }
-
-//.side-nav {
-//
-//    margin-bottom: 30px;
-//    float: right;
-//
-//    ul {
-//        overflow: hidden;
-//    }
-//
-//    li a {
-//        color: white;
-//        display: block;
-//        font-family: arial;
-//        font-size: 14px;
-//        padding: 18px;
-//        text-decoration: none;
-//        text-transform: uppercase;   
-//    }
-//
-//    li a:hover {
-//        color: $lightblue-accent;
-//    }
-//
-//    li {
-//        display: inline-block;
-//    }
-//
-//} 
-//
-//.submenu {
-//    display: none;
-//    position: absolute;
-//    z-index: 1;
-//
-//    li {
-//        display: block;
-//    } 
-//    
-//}
-//
-//.dropdown:hover .submenu {
-//    display: block;
-//}
