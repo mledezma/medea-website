@@ -11,7 +11,7 @@
     width: 0;
     z-index: 1;
 
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 1200px){
         background-color: transparent;
         float: right;
         height: auto;
@@ -28,6 +28,7 @@
             display: block;
             font-family: arial;
             font-size: 20px;
+            font-size: 2.0rem;
             padding: 18px;
             text-decoration: none;
             text-transform: uppercase;   
@@ -59,8 +60,8 @@
         }
     }
 
-    @media screen and (min-width: 480px){
-        text-align: left;
+    @media screen and (min-width: 1200px){
+        text-align: right;
     }
 }
 
@@ -70,7 +71,7 @@
     overflow: hidden;
     max-height: 0;
 
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 1200px){
         overflow: static; 
         display: none;
         position: absolute;
@@ -87,7 +88,7 @@
     position: relative;
     padding: 30px;
 
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 1200px){
         display: none;
     }
 }
@@ -101,22 +102,21 @@
     right: 0;
     top: 0;
 
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 1200px){
         display: none;
     }
 }
 
 .close-btn {
+    color: #fff;
     cursor: pointer;
     font-size: 25px;
     font-size: 2.5rem;
-    margin-left: 50px;
-    padding: 0 40px;
     position: absolute;
     right: 60px;
-    top: 0;
+    top: 7%;
 
-     @media screen and (min-width: 480px){
+     @media screen and (min-width: 1200px){
         display: none;
     }
 }
@@ -125,4 +125,8 @@
 li:hover .submenu {
     display: block;
     max-height: 500px;
+
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
 }
