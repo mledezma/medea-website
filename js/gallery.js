@@ -90,13 +90,7 @@ Gallery.prototype = {
             // image.data = i;
             var image = $('<img></img>');
             image.attr('src', this.url[i]);
-<<<<<<< HEAD
-            image.data('img', i);            
-            console.log(image.data('img'));
-=======
-            image.data('img', i);
->>>>>>> 729bb23fdeafea3d624496e1278409b0477049df
-            
+            image.data('img', i);       
             image.on('click', function(e) {
                 console.log();
                 _self.thumbnailsContainer.addClass('hidden');
