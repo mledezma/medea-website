@@ -45,8 +45,17 @@
 }
 
 .btn-trailer {
-    padding: 2.5% 25%;
-    position: relative;
+    box-sizing: border-box;    
+    display: block;
+    padding: 1% 2%;
+    margin-left: 35%;   
+    margin-top: 5%;
+    width: 30%;
+
+    @media screen and (min-width: 830px){
+        margin-left: 43%;       
+        width: 15%;
+    }
 }
 
 .btn-close {
