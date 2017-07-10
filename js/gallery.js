@@ -4,18 +4,19 @@ var Gallery = function(data){
     this.alt = data.alt || '0';
     this.index = 0;    
     this.total = data.url.length;   
-    this.image = $('#galleryImage');    
     this.thumbnailsContainer = $('#'+data.container);  
-    this.galleryContainer = $('#galleryContainer');  
     this.currentImage = $('#currentImage');  
     this.totalImage = $('#totalImage');  
     this.btnClose = $('#btnClose');
     this.gallery = $('#gallery');
+    this.scope 
 }
 
 // Gallery Prototype
 Gallery.prototype = {
     Constructor: Gallery,
+    image: $('#galleryImage'),  
+    galleryContainer: $('#galleryContainer'),           
     init: function() {
         // Render the thumbnails
         this.composeThumbnails();
@@ -40,16 +41,16 @@ Gallery.prototype = {
         });
     },
     backward: function() {
-        var btnPrevious = $('#btnPrevious');
-        var _self = this;                   
-        btnPrevious.on('click', function() {
+        var _self = this;  
+        var btnPrevious = $('#btnPrevious');        
+        btnPrevious.unbind('click');
+        btnPrevious.on('click', function() {            
             if(_self.index <= 0) {
                 _self.index = _self.total-1;
                 _self.alt[_self.total-1];                
             }
             else{
                 _self.index--; 
-                console.log('Self', _self)
                 _self.alt[_self.index];                                           
             };
             _self.image.attr('src',  _self.url[_self.index]);
@@ -59,8 +60,9 @@ Gallery.prototype = {
         })     
     },
     forward: function() {
-        var btnFoward = $('#btnFoward');        
-        var _self = this;          
+        var _self = this;   
+        var btnFoward = $('#btnFoward');                      
+        btnFoward.unbind('click');  
         btnFoward.on('click', function() {
             if(_self.index >= _self.total-1) {
                 _self.index = 0;
@@ -70,6 +72,7 @@ Gallery.prototype = {
                 _self.index++;                              
                 _self.alt[_self.index];                          
             };
+            
             _self.image.attr('src', _self.url[_self.index]);
             _self.image.attr('alt',  _self.alt[_self.index]);
             _self.currentImage.html(_self.index+1);
@@ -89,11 +92,14 @@ Gallery.prototype = {
             var image = $('<img></img>');
             image.attr('src', this.url[i]);
             image.data('img', i); 
-            image.on('click', function(e) {              
+            image.on('click', function(e) {  
+                _self.backward();        
+                _self.forward();        
                 _self.gallery.addClass('hidden');
                 _self.galleryContainer.removeClass('hidden');
                 _self.index = $(this).data('img');              
-                _self.renderGallery();               
+                _self.renderGallery(); 
+                _self.renderCounter();              
             });
 
             container.append(image);
@@ -112,7 +118,6 @@ gallery.init();
 
 var making = new Gallery({
     'url': ['../img/making/making1.jpg','../img/making/making2.jpg','../img/making/making3.jpg','../img/making/making4.jpg','../img/making/making5.jpg','../img/making/making6.jpg','../img/making/making7.jpg','../img/making/making8.jpg','../img/making/making9.jpg','../img/making/making10.jpg','../img/making/making11.jpg','../img/making/making12.jpg','../img/making/making13.jpg','../img/making/making14.jpg','../img/making/making15.jpg','../img/making/making16.jpg'],
-    
     'container': 'makingThumbnails',
 });
 making.init();
