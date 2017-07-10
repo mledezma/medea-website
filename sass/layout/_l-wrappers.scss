@@ -7,7 +7,7 @@
 .home-wrapper {
     background-image: url("../img/medea2.jpg");
     background-size: cover;
-    //height: 1200px;
+    padding-bottom: 10%;
     position: relative;
 }
 
@@ -26,9 +26,10 @@
 
     aside {
         border-left: 3px solid $lightblue-accent;
-        float: right;
+        display: inline-block;
         line-height: 1.5;
         padding: 5% 0% 0 8%;
+        vertical-align: top;
         width: 90%;        
         
         @media screen and (min-width: 1200px) { 
@@ -45,7 +46,12 @@
 
 .cast-members {
     display: inline-block;
-    text-align: right;
+    margin-right: 6%;
+    text-align: left;
+    
+    @media screen and (min-width: 1200px) { 
+        text-align: right;     
+    }
 
     h3 {
         cursor: pointer;
@@ -71,11 +77,13 @@
         margin-left: 25%;      
         width: 75%;
     }
+
     aside {
         border-left: 3px solid $lightblue-accent;
-        float: right;
+        display: inline-block;
         line-height: 1.5;
         padding: 5% 0% 0 8%;
+        vertical-align: top;
         width: 90%;        
         
         @media screen and (min-width: 1200px) { 
@@ -92,8 +100,13 @@
 
 .crew-members {
     display: inline-block;
-    text-align: right;
-
+    margin-right: 6%;    
+    text-align: left;
+    
+    @media screen and (min-width: 1200px) { 
+        text-align: right;     
+    }
+    
     h3 {
         cursor: pointer;
         font-size: 20px;

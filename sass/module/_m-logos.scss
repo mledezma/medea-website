@@ -17,6 +17,10 @@
 	margin-top: 30%;
 	width: 50%;
 
+    @media screen and (min-width: 540px){
+        margin-top: 20%;
+    }
+
 	@media screen and (min-width: 768px){
         margin-top: 15%;
     }

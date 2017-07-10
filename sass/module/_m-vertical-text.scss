@@ -35,14 +35,14 @@
 
     aside {
         border-left: 3px solid $lightblue-accent;
-        float: left;
         line-height: 1.5;
         padding: 0 5%;
-        width: 90%;        
+        width: 85%;        
         
         @media screen and (min-width: 1200px) { 
+            margin-left: 110px;                        
             padding: 0 6%;  
-            width: 55%;                     
+            width: 70%;                     
         }
     }
 }
