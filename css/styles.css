@@ -86,12 +86,12 @@ body {
   width: 100%; }
   @media screen and (min-width: 1200px) {
     .cast-wrapper {
-      margin-left: 30%;
-      width: 65%; } }
+      margin-left: 22%;
+      width: 70%; } }
   @media screen and (min-width: 1600px) {
     .cast-wrapper {
-      margin-left: 40%;
-      width: 65%; } }
+      margin-left: 32%;
+      width: 70%; } }
   .cast-wrapper aside {
     border-left: 3px solid #659DB5;
     display: inline-block;
@@ -102,11 +102,11 @@ body {
     @media screen and (min-width: 1200px) {
       .cast-wrapper aside {
         padding: 0 6%;
-        width: 60%; } }
+        width: 50%; } }
     @media screen and (min-width: 1600px) {
       .cast-wrapper aside {
         padding: 0 6%;
-        width: 65%; } }
+        width: 55%; } }
 
 .cast-members {
   display: inline-block;

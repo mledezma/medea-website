@@ -1,17 +1,17 @@
 // Gallery constructor
 var Gallery = function(data){
     this.url = data.url;
-    this.alt = data.alt;
+    this.alt = data.alt || '0';
     this.index = 0;    
     this.total = data.url.length;   
     this.image = $('#galleryImage');    
-    this.thumbnailsContainer = $('#galleryThumbnails');  
+    this.thumbnailsContainer = $('#'+data.container);  
     this.galleryContainer = $('#galleryContainer');  
     this.currentImage = $('#currentImage');  
     this.totalImage = $('#totalImage');  
     this.btnClose = $('#btnClose');
+    this.gallery = $('#gallery');
 }
-
 
 // Gallery Prototype
 Gallery.prototype = {
@@ -35,13 +35,13 @@ Gallery.prototype = {
         this.image.attr('alt', this.alt[this.index]);
 
         this.btnClose.on('click', function() {
-            _self.thumbnailsContainer.removeClass('hidden');
+            _self.gallery.removeClass('hidden');
             _self.galleryContainer.addClass('hidden');
         });
     },
     backward: function() {
         var btnPrevious = $('#btnPrevious');
-        var _self = this;             
+        var _self = this;                   
         btnPrevious.on('click', function() {
             if(_self.index <= 0) {
                 _self.index = _self.total-1;
@@ -49,6 +49,7 @@ Gallery.prototype = {
             }
             else{
                 _self.index--; 
+                console.log('Self', _self)
                 _self.alt[_self.index];                                           
             };
             _self.image.attr('src',  _self.url[_self.index]);
@@ -66,7 +67,7 @@ Gallery.prototype = {
                 _self.alt[0];
             }
             else {
-                _self.index++; 
+                _self.index++;                              
                 _self.alt[_self.index];                          
             };
             _self.image.attr('src', _self.url[_self.index]);
@@ -85,18 +86,13 @@ Gallery.prototype = {
             var container = $('<div></div>');
             container.addClass('image-container');
 
-            // var image = document.createElement('img');
-            // image.src = this.url[i];
-            // image.data = i;
             var image = $('<img></img>');
             image.attr('src', this.url[i]);
-            image.data('img', i);       
-            image.on('click', function(e) {
-                console.log();
-                _self.thumbnailsContainer.addClass('hidden');
+            image.data('img', i); 
+            image.on('click', function(e) {              
+                _self.gallery.addClass('hidden');
                 _self.galleryContainer.removeClass('hidden');
-                _self.index = $(this).data('img');
-            
+                _self.index = $(this).data('img');              
                 _self.renderGallery();               
             });
 
@@ -107,9 +103,16 @@ Gallery.prototype = {
 }
 
 // Gallery Init
-var g1 = new Gallery({
-    'url': ['../img/gallery/atropello.jpg','../img/gallery/colchon.jpg','../img/gallery/ducha_1.jpg','../img/gallery/ducha_2.jpg', '../img/gallery/ducha_3.jpg', '../img/gallery/enfrentamiento_1.jpg', '../img/gallery/enfrentamiento_2.jpg','../img/gallery/espejo.jpg','../img/gallery/fiesta_1.jpg','../img/gallery/fiesta_2.jpg','../img/gallery/fiesta_3.jpg','../img/gallery/fiesta_4.jpg','../img/gallery/fiesta_5.jpg','../img/gallery/novio.jpg','../img/gallery/parque.jpg','../img/gallery/parto.jpg','../img/gallery/rugby_1.jpg','../img/gallery/rugby_2.jpg','../img/gallery/rugby_3.jpg','../img/gallery/sangre.jpg'],
-    'alt': ['Atropello','Colchon.jpg','Foto en ducha','Foto en ducha', 'Foto en ducha', 'Enfrentamiento Interno', 'Enfrentamiento Interno','Mujer frente a espejo','Foto en la fiesta','Foto en la fiesta','Foto en la fiesta','../img/gallery/fiesta_4.jpg','Foto en la fiesta','Novio de la protagonista','Mujer en el parque','Mujer teniendo aborto','Mujer jugando Rugby','Mujer jugando Rugby','Mujer jugando Rugby','Sangre en el suelo']
+var gallery = new Gallery({
+    'url': ['../img/gallery/atropello.jpg','../img/gallery/ducha_2.jpg', '../img/gallery/ducha_3.jpg', '../img/gallery/enfrentamiento_1.jpg', '../img/gallery/enfrentamiento_2.jpg','../img/gallery/espejo.jpg','../img/gallery/fiesta_1.jpg','../img/gallery/fiesta_2.jpg','../img/gallery/fiesta_3.jpg','../img/gallery/novio.jpg','../img/gallery/parque.jpg'],
+    'alt': ['Atropello','Foto en ducha', 'Foto en ducha', 'Enfrentamiento Interno', 'Enfrentamiento Interno','Mujer frente a espejo','Foto en la fiesta','Foto en la fiesta','Foto en la fiesta','Novio de la protagonista','Mujer en el parque'],
+    'container': 'galleryThumbnails',
 });
+gallery.init();
 
-g1.init();
+var making = new Gallery({
+    'url': ['../img/making/making1.jpg','../img/making/making2.jpg','../img/making/making3.jpg','../img/making/making4.jpg','../img/making/making5.jpg','../img/making/making6.jpg','../img/making/making7.jpg','../img/making/making8.jpg','../img/making/making9.jpg','../img/making/making10.jpg','../img/making/making11.jpg','../img/making/making12.jpg','../img/making/making13.jpg','../img/making/making14.jpg','../img/making/making15.jpg','../img/making/making16.jpg'],
+    
+    'container': 'makingThumbnails',
+});
+making.init();
