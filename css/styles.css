@@ -166,13 +166,15 @@ body {
 
 header {
   padding: 6% 0;
-  margin-bottom: 20%; }
+  margin-bottom: 10%; }
   @media screen and (min-width: 768px) {
     header {
-      padding: 4% 0; } }
+      padding: 4% 0;
+      margin-bottom: 8%; } }
   @media screen and (min-width: 950px) {
     header {
-      padding: 4% 0; } }
+      padding: 4% 0;
+      margin-bottom: 18%; } }
   header img {
     width: 35%;
     float: left; }
@@ -250,8 +252,6 @@ footer {
         color: white;
         display: block;
         font-family: arial;
-        font-size: 20px;
-        font-size: 2.0rem;
         padding: 18px;
         text-decoration: none;
         text-transform: uppercase; }
@@ -272,7 +272,10 @@ footer {
       color: #659DB5; }
   @media screen and (min-width: 1200px) {
     .mainmenu {
-      text-align: right; } }
+      text-align: right; }
+      .mainmenu a {
+        font-size: 14px;
+        font-size: 1.4rem; } }
 
 .submenu {
   font-size: 36px;
@@ -281,12 +284,16 @@ footer {
   max-height: 0; }
   @media screen and (min-width: 1200px) {
     .submenu {
-      overflow: static;
+      background-color: #000;
       display: none;
+      overflow: static;
       position: absolute;
       z-index: 1; }
       .submenu li {
-        display: block; } }
+        display: block; }
+      .submenu a {
+        font-size: 12px;
+        font-size: 1.2rem; } }
 
 .open-btn-wrapper {
   box-sizing: border-box;
@@ -548,7 +555,7 @@ li:hover .submenu {
       width: 15%; } }
   @media screen and (min-width: 1200px) {
     .btn-trailer {
-      margin-top: 5%; } }
+      margin-top: 14%; } }
 
 .btn-close {
   cursor: pointer;
