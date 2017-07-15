@@ -16,11 +16,13 @@ var castSingle = (function ($) {
         // Triggered if the JSON succeed
         function jsonSuccess(data) {
             var castObj = data.cast.en;
+            var childArray = [];
+            castBio.html(castObj[0].bio);
             castObj.forEach(function(element, index) {
                 var h3 = $('<h3></h3>');
                 h3.html(element.name);
                 h3.on('click', function(){
-                    var childArray = castMember.children();  
+                    childArray = castMember.children();  
                     castBio.html(element.bio); 
                     for(var i = 0; i < childArray.length; i++) {
                         childArray[i].classList.remove('text-selected');                                                
@@ -29,7 +31,8 @@ var castSingle = (function ($) {
                 })
                 castMember.append(h3);
             });
-            data;
+            childArray = castMember.children();
+            childArray[0].classList.add('text-selected');
         }
 
         // Triggered if the JSON fails
