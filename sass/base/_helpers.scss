@@ -22,3 +22,9 @@
     width: 100%;
     z-index: 555;
 }
+
+.dropdown-text {
+    border-left: 3px solid $lightblue-accent;  
+    line-height: 1.5;        
+    padding-left: 3%;                 
+}

@@ -71,6 +71,11 @@ body {
   width: 100%;
   z-index: 555; }
 
+.dropdown-text {
+  border-left: 3px solid #659DB5;
+  line-height: 1.5;
+  padding-left: 3%; }
+
 .full-wrapper {
   position: relative;
   width: 90%;
@@ -92,19 +97,19 @@ body {
     .cast-wrapper {
       margin-left: 32%;
       width: 70%; } }
-  .cast-wrapper aside {
-    border-left: 3px solid #659DB5;
+  .cast-wrapper .sidebar {
     display: inline-block;
     line-height: 1.5;
     padding: 5% 0% 0 8%;
     vertical-align: top;
     width: 90%; }
     @media screen and (min-width: 1200px) {
-      .cast-wrapper aside {
+      .cast-wrapper .sidebar {
+        border-left: 3px solid #659DB5;
         padding: 0 6%;
         width: 50%; } }
     @media screen and (min-width: 1600px) {
-      .cast-wrapper aside {
+      .cast-wrapper .sidebar {
         padding: 0 6%;
         width: 55%; } }
 
@@ -133,19 +138,19 @@ body {
     .crew-wrapper {
       margin-left: 25%;
       width: 75%; } }
-  .crew-wrapper aside {
-    border-left: 3px solid #659DB5;
+  .crew-wrapper .sidebar {
     display: inline-block;
     line-height: 1.5;
     padding: 5% 0% 0 8%;
     vertical-align: top;
     width: 90%; }
     @media screen and (min-width: 1200px) {
-      .crew-wrapper aside {
+      .crew-wrapper .sidebar {
+        border-left: 3px solid #659DB5;
         padding: 0 6%;
         width: 45%; } }
     @media screen and (min-width: 1600px) {
-      .crew-wrapper aside {
+      .crew-wrapper .sidebar {
         padding: 0 6%;
         width: 50%; } }
 
@@ -360,13 +365,13 @@ li:hover .submenu {
       top: 45px;
       transform: rotate(-90deg);
       white-space: nowrap; } }
-  .rotate-wrapper aside {
+  .rotate-wrapper .sidebar {
     border-left: 3px solid #659DB5;
     line-height: 1.5;
     padding: 0 5%;
     width: 85%; }
     @media screen and (min-width: 1200px) {
-      .rotate-wrapper aside {
+      .rotate-wrapper .sidebar {
         margin-left: 110px;
         padding: 0 6%;
         width: 70%; } }
@@ -649,12 +654,13 @@ li:hover .submenu {
   position: absolute; }
 
 .logos {
-  margin-top: 10%; }
+  margin-top: 20%; }
   .logos img {
-    margin-right: 12%;
-    width: 20%; }
+    margin-right: 5%;
+    width: 10%; }
   .logos img:last-child {
-    width: 50%; }
+    margin-top: 3%;
+    width: 55%; }
 
 .medea-principal {
   display: block;

@@ -24,8 +24,7 @@
         width: 70%;
     }
 
-    aside {
-        border-left: 3px solid $lightblue-accent;
+    .sidebar {
         display: inline-block;
         line-height: 1.5;
         padding: 5% 0% 0 8%;
@@ -33,6 +32,7 @@
         width: 90%;        
         
         @media screen and (min-width: 1200px) { 
+            border-left: 3px solid $lightblue-accent;              
             padding: 0 6%;  
             width: 50%;                     
         }
@@ -78,8 +78,7 @@
         width: 75%;
     }
 
-    aside {
-        border-left: 3px solid $lightblue-accent;
+    .sidebar {
         display: inline-block;
         line-height: 1.5;
         padding: 5% 0% 0 8%;
@@ -87,6 +86,7 @@
         width: 90%;        
         
         @media screen and (min-width: 1200px) { 
+            border-left: 3px solid $lightblue-accent;              
             padding: 0 6%;  
             width: 45%;                     
         }
