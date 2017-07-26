@@ -590,7 +590,7 @@ li:hover .submenu {
   box-sizing: border-box;
   color: #FFF;
   display: inline-block;
-  height: 320px;
+  height: 380px;
   margin-top: 5px;
   padding: 16%;
   vertical-align: top;
@@ -599,7 +599,7 @@ li:hover .submenu {
     .awards-item {
       padding: 6%;
       width: 33%;
-      height: 370px; } }
+      height: 460px; } }
   .awards-item h2 {
     font-family: "Josefin Sans", sans-serif;
     position: relative;
