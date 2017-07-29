@@ -1,4 +1,4 @@
-var castEsSingle = (function ($) {
+var castSingle = (function ($) {
 
     // Instance stores a reference to the Singleton
     var instance;
