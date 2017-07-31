@@ -234,7 +234,6 @@ footer {
   height: 100%;
   left: 0;
   overflow-x: hidden;
-  padding-top: 60px;
   position: fixed;
   text-transform: uppercase;
   top: 0;
@@ -248,39 +247,41 @@ footer {
       height: auto;
       margin-bottom: 30px;
       overflow-x: hidden;
-      padding-top: 0;
       position: static;
       vertical-align: initial;
       width: 80%;
       z-index: 1; }
-      .side-nav li a {
-        color: white;
-        display: block;
-        font-family: arial;
-        padding: 18px;
-        text-decoration: none;
-        text-transform: uppercase; }
-      .side-nav li a:hover {
-        color: #659DB5; }
       .side-nav li {
         display: inline-block; } }
+
+.nav-item a {
+  color: #fff;
+  display: inline-block;
+  padding: 50px 0;
+  text-decoration: none; }
+  @media screen and (min-width: 1200px) {
+    .nav-item a {
+      display: block;
+      font-family: arial;
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding: 18px;
+      text-decoration: none;
+      text-transform: uppercase; } }
+  .nav-item a:hover {
+    color: #659DB5; }
+.nav-item:first-child a {
+  padding: 110px 0 50px; }
+  @media screen and (min-width: 1200px) {
+    .nav-item:first-child a {
+      padding: 18px; } }
 
 .mainmenu {
   list-style: none;
   text-align: center; }
-  .mainmenu a {
-    color: #fff;
-    display: inline-block;
-    padding: 50px 0;
-    text-decoration: none; }
-    .mainmenu a:hover {
-      color: #659DB5; }
   @media screen and (min-width: 1200px) {
     .mainmenu {
-      text-align: right; }
-      .mainmenu a {
-        font-size: 14px;
-        font-size: 1.4rem; } }
+      text-align: right; } }
 
 .submenu {
   font-size: 36px;
@@ -338,6 +339,21 @@ li:hover .submenu {
   @media screen and (min-width: 1200px) {
     li:hover .submenu {
       text-align: left; } }
+
+.lang {
+  color: #fff;
+  font-size: 18px;
+  margin: 50px 0; }
+  @media screen and (min-width: 1200px) {
+    .lang {
+      margin: 0; } }
+  .lang a {
+    color: #fff;
+    display: inline;
+    font-family: arial;
+    margin: 0 10px; }
+    .lang a:hover {
+      color: #659DB5; }
 
 .vertical-text {
   display: block;
