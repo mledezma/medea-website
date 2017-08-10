@@ -82,10 +82,11 @@ body {
   margin: 0 auto; }
 
 .home-wrapper {
-  background-image: url("../img/medea2.jpg");
+  background-image: url("../img/portada.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10%;
-  position: relative; }
+  background-position: center;
+  padding-bottom: 10%; }
 
 .cast-wrapper {
   width: 100%; }
@@ -391,6 +392,15 @@ li:hover .submenu {
         margin-left: 110px;
         padding: 0 6%;
         width: 70%; } }
+
+@media screen and (min-width: 1200px) {
+  .rotate-wrapper-letter span {
+    display: inline-block;
+    left: -150px;
+    position: absolute;
+    top: 135px;
+    transform: rotate(-90deg);
+    white-space: nowrap; } }
 
 .gallery {
   position: relative;

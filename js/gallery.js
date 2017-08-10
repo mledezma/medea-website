@@ -110,14 +110,14 @@ Gallery.prototype = {
 
 // Gallery Init
 var gallery = new Gallery({
-    'url': ['../img/gallery/atropello.jpg','../img/gallery/ducha_2.jpg', '../img/gallery/ducha_3.jpg', '../img/gallery/enfrentamiento_1.jpg', '../img/gallery/enfrentamiento_2.jpg','../img/gallery/espejo.jpg','../img/gallery/fiesta_1.jpg','../img/gallery/fiesta_2.jpg','../img/gallery/fiesta_3.jpg','../img/gallery/novio.jpg','../img/gallery/parque.jpg','../img/gallery/rugby1.jpg','../img/gallery/rugby2.jpg'],
-    'alt': ['Atropello','Foto en ducha', 'Foto en ducha', 'Enfrentamiento Interno', 'Enfrentamiento Interno','Mujer frente a espejo','Foto en la fiesta','Foto en la fiesta','Foto en la fiesta','Novio de la protagonista','Mujer en el parque', 'Jugando Rugby','Jugando Rugby'],
+    'url': ['../img/gallery/atropello.jpg','../img/gallery/ducha_2.jpg','../img/gallery/enfrentamiento_1.jpg', '../img/gallery/enfrentamiento_2.jpg','../img/gallery/espejo.jpg','../img/gallery/fiesta_1.jpg','../img/gallery/fiesta_2.jpg','../img/gallery/fiesta_3.jpg','../img/gallery/novio.jpg','../img/gallery/parque.jpg','../img/gallery/rugby1.jpg','../img/gallery/rugby2.jpg'],
+    'alt': ['Atropello','Foto en ducha', 'Enfrentamiento Interno', 'Enfrentamiento Interno','Mujer frente a espejo','Foto en la fiesta','Foto en la fiesta','Foto en la fiesta','Novio de la protagonista','Mujer en el parque', 'Jugando Rugby','Jugando Rugby'],
     'container': 'galleryThumbnails',
 });
 gallery.init();
 
 var making = new Gallery({
-    'url': ['../img/making/making1.jpg','../img/making/making2.jpg','../img/making/making3.jpg','../img/making/making4.jpg','../img/making/making5.jpg','../img/making/making6.jpg','../img/making/making7.jpg','../img/making/making8.jpg','../img/making/making9.jpg','../img/making/making10.jpg','../img/making/making11.jpg','../img/making/making12.jpg','../img/making/making13.jpg','../img/making/making14.jpg','../img/making/making15.jpg','../img/making/making16.jpg','../img/making/making17.jpg','../img/making/making18.jpg'],
+    'url': ['../img/making/making1.jpg','../img/making/making2.jpg','../img/making/making3.jpg','../img/making/making5.jpg','../img/making/making6.jpg','../img/making/making7.jpg','../img/making/making8.jpg','../img/making/making9.jpg','../img/making/making10.jpg','../img/making/making11.jpg','../img/making/making12.jpg','../img/making/making13.jpg','../img/making/making14.jpg','../img/making/making15.jpg','../img/making/making16.jpg','../img/making/making17.jpg','../img/making/making18.jpg'],
     'container': 'makingThumbnails',
 });
 making.init();

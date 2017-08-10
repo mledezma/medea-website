@@ -5,10 +5,11 @@
 }
 
 .home-wrapper {
-    background-image: url("../img/medea2.jpg");
+    background-image: url("../img/portada.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;    
     padding-bottom: 10%;
-    position: relative;
 }
 
 .cast-wrapper {
