@@ -172,7 +172,7 @@ body {
 
 header {
   padding: 6% 0;
-  margin-bottom: 10%; }
+  margin-bottom: 20%; }
   @media screen and (min-width: 768px) {
     header {
       padding: 4% 0;
@@ -420,7 +420,7 @@ li:hover .submenu {
   margin: 0 10% 2%;
   overflow: hidden;
   position: relative;
-  padding-top: 65%;
+  padding-top: 53%;
   width: 80%; }
   .image-container img {
     bottom: 0px;
@@ -593,8 +593,8 @@ li:hover .submenu {
   margin-right: 0;
   position: absolute;
   right: 0;
-  top: -70px;
-  width: 60px; }
+  top: -55px;
+  width: 57px; }
   @media screen and (min-width: 1200px) {
     .btn-close {
       margin-right: 3%;
