@@ -600,6 +600,14 @@ li:hover .submenu {
       margin-right: 3%;
       right: 0; } }
 
+.btn-close-trailer {
+  cursor: pointer;
+  margin-right: 100;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 55px; }
+
 .awardsTitle {
   color: white;
   font-size: 22px;
