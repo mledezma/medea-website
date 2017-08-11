@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
     })
 
     // When you click the arrow, hides the modal
-    $('.btn-close').click(function() {
+    $('.btn-close-trailer').click(function() {
         toggleVisibility();
 		$('#trailerYoutube')[0].innerHTML = '';
     })
