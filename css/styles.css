@@ -176,11 +176,11 @@ header {
   @media screen and (min-width: 768px) {
     header {
       padding: 4% 0;
-      margin-bottom: 8%; } }
+      margin-bottom: 6%; } }
   @media screen and (min-width: 950px) {
     header {
       padding: 4% 0;
-      margin-bottom: 18%; } }
+      margin-bottom: 10%; } }
   header img {
     width: 35%;
     float: left; }
@@ -624,7 +624,6 @@ li:hover .submenu {
   box-sizing: border-box;
   color: #FFF;
   display: inline-block;
-  height: 380px;
   margin-top: 5px;
   padding: 16%;
   vertical-align: top;
@@ -634,6 +633,8 @@ li:hover .submenu {
       padding: 6%;
       width: 33%;
       height: 460px; } }
+  .awards-item polyline {
+    margin-bottom: 40%; }
   .awards-item h2 {
     font-family: "Josefin Sans", sans-serif;
     position: relative;
