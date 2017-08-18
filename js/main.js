@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
     // When you click the trailer button
     $('#btnTrailer').click(function() {
-		$('#trailerYoutube')[0].innerHTML = '<video width="100%" height="100%" controls autoplay><source src="../video/trailer.mp4">Your Browser does not support the video tag</video>';
+		$('#trailerYoutube')[0].innerHTML = '<video width="100%" height="100%" controls autoplay><source src="video/trailer.mp4">Your Browser does not support the video tag</video>';
         $('.opacity').removeClass('hidden');
         $('#trailer').removeClass('hidden');
     })
