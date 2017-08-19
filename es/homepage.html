@@ -4,13 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elenco</title>
+  <title>Medea</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  <body>
+<body>
+  <div class="opacity hidden"></div>
+  <!-- Start Home Wrapper -->
+  <div class="home-wrapper">
+    <!-- Start Full Wrapper -->
     <div class="full-wrapper">
+    
       <!-- Start Header -->
     <header>
       <img src="../img/logo_medea.png">
@@ -38,7 +45,7 @@
             <li class="nav-item"><a href="festivals.html">Festivales</a></li>
             <li class="nav-item"><a href="news.html">Noticias</a></li>
             <li class="nav-item"><a href="contact.html">Contacto</a></li>
-            <li class="lang"><a href="../html_en/crew.html">EN</a>/<a href="crew.html">ES</a></li>
+            <li class="lang"><a href="../en/homepage.html">EN</a>/<a href="homepage.html">ES</a></li>
           </ul>
         </nav>
         <a id="closeNav" class="close-btn">&times;</a>
@@ -50,40 +57,36 @@
       <!-- End Header -->
     </header>
 
-      <!-- Start Crew Section -->
-      <section>
-        <div class="crew-wrapper">
-          <div id="crew" class="crew-members"></div>
-          <div class="sidebar" id="crewInfo">
-            <p id="crewBio">
-            </p>
-          </div>
-        </div>
+      <img src="../img/logo_medea.png" class="medea-principal">
+
+      <a class="btn btn-trailer" id="btnTrailer">Ver Trailer</a>
+
+      <section class="modal trailer hidden" id="trailer">
+        <img src="../img/btn-close.png" class="btn-close-trailer" alt="Button to go before of the trailer">
+        <div class="trailer-video" id="trailerYoutube"></div>
       </section>
-      <!-- End Crew Section -->
-
+      <!-- End Full Wrapper -->
     </div>
+    <!-- End Home Wrapper -->
+  </div>
 
-    <footer>
+  <footer>
+    <div>
       <div>
-        <div>
-          <a class="facebook" href="">
+        <a class="facebook" href="">
           <img src="../img/face_logo.png">
         </a>
-        </div>
-        <div>
-          <a class="facebook" href="">
+      </div>
+      <div>
+        <a class="facebook" href="">
           <img src="../img/insta_logo.png">
         </a>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/enquire.min.js"></script>
-    <script src="../js/crew_ES.js"></script>
-    <script type="text/javascript" src="../js/main_menu.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="../js/main.min.js"></script>
+</body>
 
 </html>
