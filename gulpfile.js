@@ -15,7 +15,6 @@ gulp.task('autoprefixer', function () {
         cssnano()
     ];
     return gulp.src('css/*.css')
-        .pipe(sourcemaps.init())
         .pipe(postcss(plugins))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css'));
@@ -41,3 +40,4 @@ gulp.task('images', function () {
         .pipe(imagemin())
         .pipe(gulp.dest('img'))
 });
+gulp.task('build', ['autoprefixer', 'useref_en', 'useref_es']);
